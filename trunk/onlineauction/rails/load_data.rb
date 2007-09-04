@@ -7,7 +7,6 @@ User.delete_all
 daniel = User.create(:name => "Daniel", :email => "daniel@nouvelles-solutions.com")
 tony = User.create(:name => "Tony", :email => "tony@effectiveui.com")
 derek = User.create(:name => "Derek", :email => "derek@flexonrails.net", :seller => Seller.new)
-RAILS_DEFAULT_LOGGER.debug "@@@Derek:#{derek.id} INSPECT#{derek.inspect}"
 seller = derek.seller
 auction = seller.auctions.create(:duration => 24, 
                                   :title => "Awesome Wii", 
