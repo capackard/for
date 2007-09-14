@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" backgroundImage="bg.gif" 
+	layout="vertical" 
+	applicationComplete="setup();" >
+	
+	<!-- <mx:Style source="edding.css"/> -->
+	<mx:Script>
+		<![CDATA[
+			import mx.controls.Image;
+			
+			private function setup():void {
+			}
+		]]>
+	</mx:Script>
+	<mx:Label text="OnLineAuction - SELLTER" fontFamily="eddi" fontSize="30" letterSpacing="5"   x="208.5" y="12"/>
+	
+	<mx:HDividedBox width="100%" height="100%">
+		<mx:VBox width="30%" height="100%">
+			<mx:Label text="AUCTIONS" />
+			<mx:TabBar dataProvider="['Current', 'Future', 'Past']"  width="100%"/>
+	    		<mx:DataGrid width="100%" height="100%">
+	    			<mx:columns>
+	    				<mx:DataGridColumn headerText="Time Left" dataField="col1"/>
+	    				<mx:DataGridColumn headerText="Price" dataField="col2"/>
+	    				<mx:DataGridColumn headerText="Item" dataField="col3"/>
+	    			</mx:columns>
+	    		</mx:DataGrid>			
+				<mx:Button label="NEW AUCTION" />
+		</mx:VBox>
+		<mx:VBox width="70%" height="100%" >
+			<mx:HBox width="100%" horizontalAlign="center">
+				<mx:Button label="START AUCTION" />
+				<mx:Button label="DELETE AUCTION" />				
+			</mx:HBox>
+		    <mx:Form  width="100%" >
+		    	<mx:FormItem label="Title"><mx:TextInput /></mx:FormItem>
+		    	<mx:FormItem label="Images" width="100%">
+		    	   <mx:HBox width="100%">
+		    	   	<mx:TileList width="100%"  height="99"/>
+		    	   	<mx:VBox>
+		    	   		<mx:Button label="+" />
+		    	   		<mx:Button label="-" />		    	   		
+		    	   	</mx:VBox>
+		    	   </mx:HBox>
+		    	</mx:FormItem>
+		    	<mx:FormItem label="Description" width="100%"><mx:RichTextEditor width="100%"  height="188"/></mx:FormItem>
+	    	   	<mx:FormItem label="Category"><mx:Label text="Dvd"/></mx:FormItem>	    	   		
+    	   		<mx:FormItem label="Current Price"><mx:TextInput text="$2.50" /></mx:FormItem>
+    	   		<mx:FormItem label="Buy Now Price"><mx:TextInput text="$2.50" /></mx:FormItem>
+    	   		<mx:FormItem label="Reserve Price"><mx:TextInput text="$2.50" /></mx:FormItem>
+		    	
+		    </mx:Form>
+		</mx:VBox>
+	</mx:HDividedBox>
+		
+  <mx:XML id="categoriesData">
+     <categories>
+    		 <node label="Cameras &amp; Photo">
+				<node label="Bags"/>
+				<node label="Accessories"/>
+				<node label="Analog Cameras"/>
+				<node label="Digital Cameras"/>
+			</node>
+    		 <node label="Cell Phones">
+				<node label="Accessories"/>
+				<node label="Phones"/>
+				<node label="Prepaid Cards"/>
+			</node>
+    		 <node label="Dvds">
+				<node label="Blueray"/>
+				<node label="HD DVD"/>
+				<node label="DVD"/>
+			</node>
+     </categories>
+  </mx:XML>
+		
+
+</mx:Application>
