@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
+	 width="100%" height="100%">
+	<mx:Metadata>
+		[Event(name="allTestsEnd")]
+	</mx:Metadata>
+	<mx:Script>
+		<![CDATA[
+			import flexunit.framework.Test;
+			import tests.utils.TestRunner;
+			
+			public var test:Test;
+			
+			[Bindable]
+			private var runner:TestRunner;
+			
+			[Bindable]
+			public var testResults:String="started...";
+			
+			public function startTest(): void {
+				runner = new TestRunner(complete);					
+				TestRunner.run(test, complete)
+			}
+			
+			private function complete(result:String=""):void {
+				testResults = result;
+				dispatchEvent(new Event('allTestsEnd'));
+			}
+			
+			
+
+		]]>
+	</mx:Script>
+	
+	<mx:TextArea width="100%" height="100%"  text="{testResults}"/>
+</mx:VBox>

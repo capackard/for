@@ -2,8 +2,7 @@ package org.onrails.rails
 {
 	import mx.rpc.AsyncToken;
 	import org.onrails.rails.ActiveResourceClient;
-	import org.onrails.myspyder.utils.ItemResponder;  //FIXME: move to org.onrails.org
-
+	import org.onrails.rails.utils.ItemResponder;
 	public class FixtureResource extends ActiveResourceClient
 	{
 		private var fixtureCreatedCallBack:Function ; // Assume TestCase Class
