@@ -1,4 +1,15 @@
 ActionController::Routing::Routes.draw do |map|
+   map.resources :bids
+   map.resources :sellers, :has_many => [:auctions]
+   map.resources :auctions, :has_many => [:bids], :has_one => [:item]
+   map.resources :items
+   map.resources :users, :has_many => [:bids], :has_one => [:seller]
+
+   if RAILS_ENV == "test"
+     map.resources :fixtures, :new => { :test_results => :post }
+     map.crossdomain '/crossdomain.xml', :controller => 'fixtures', :action => 'crossdomain'
+   end
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
