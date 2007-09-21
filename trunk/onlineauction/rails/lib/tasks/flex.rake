@@ -1,26 +1,26 @@
 require 'rake/clean'
 
 namespace :flex do
-  FLEX_ROOT = File.join(File.dirname(__FILE__), '..', '..', '..', 'flex', 'src')
+  FLEX_ROOT = File.join(File.dirname(__FILE__), '..', '..', '..', 'flex')
   
   def to_swf(files)
     files.pathmap("public/%n.swf")
   end
   
   def to_mxml(files)
-    files.pathmap("#{FLEX_ROOT}/%n.mxml")
+    files.pathmap("#{FLEX_ROOT}/src/%n.mxml")
   end
   
-  MXML_FILES = FileList["#{FLEX_ROOT}/*.mxml"]
+  MXML_FILES = FileList["#{FLEX_ROOT}/src/*.mxml"]
   SWF_FILES = to_swf(MXML_FILES)
-  ALL_SOURCE_FILES = FileList.new("#{FLEX_ROOT}/**/*.*") { |list| list.exclude(/^flex\/bin\/.*/); list.exclude(/^.*\.sh$/) }
+  ALL_SOURCE_FILES = FileList.new("#{FLEX_ROOT}/src/**/*.*") { |list| list.exclude(/^flex\/bin\/.*/); list.exclude(/^.*\.sh$/) }
   CLOBBER.include(SWF_FILES)
   
   ToMxmlLambda = lambda { |fn| to_mxml(fn) }
   
   rule(%r{\.swf\Z} => ToMxmlLambda) do |task|
     mxmlc = ENV['FLEX_SDK_3_HOME'] ? File.join(ENV['FLEX_SDK_3_HOME'], 'bin', 'mxmlc') : 'mxmlc'
-    sh %Q{#{mxmlc} -output #{task.name} -compiler.library-path+="#{FLEX_ROOT}/lib" -- #{task.source}} do |ok, res|
+    sh %Q{#{mxmlc} -output #{task.name} -compiler.services="../flex/src/services-config.xml" -compiler.library-path+="#{FLEX_ROOT}/libs" -- #{task.source}} do |ok, res|
       unless ok
         raise "Could NOT compile #{task.source} with #{mxmlc}.\nMake sure the Flex SDK 3 bin directory is in your PATH or set FLEX_SDK_3_HOME"
       end
@@ -35,7 +35,7 @@ namespace :flex do
   desc "Build SWF's"
   task :build => SWF_FILES
   
-  RESULTS_FILE = File.join('flex', 'bin', 'test_results.txt')
+  RESULTS_FILE = File.join('..', 'flex', 'bin', 'test_results.txt')
   desc "Remove Flex test results"
   task :clean_test_results do
     rm_f RESULTS_FILE
@@ -43,7 +43,7 @@ namespace :flex do
   
   desc "Run Flex Tests"
   task :test => [:build, :clean_test_results] do
-    test_swf = 'flex/bin/FlexUnitTestRunner.swf'
+    test_swf = '../flex/bin/FlexUnitTestRunner.swf'
     if File.file?(test_swf)
       run_test_server do
         puts "Running Flex tests"
