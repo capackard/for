@@ -53,3 +53,4 @@ Rails::Initializer.run do |config|
   # Application configuration should go into files in config/initializers
   # -- all .rb files in that directory is automatically loaded
 end
+Mime::Type.register "application/x-amf", :amf

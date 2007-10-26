@@ -1,0 +1,2112 @@
+FixturesController: missing default helper path fixtures_helper
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 10:17:45) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+  [4;36;1mSQL (0.011224)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000148)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Errno::ENOENT (No such file or directory - /Users/daniel/SvnProjects/for/onlineauction/rails/test/fixtures/users):
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:347:in `open'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:347:in `read_fixture_files'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:284:in `initialize'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:253:in `create_fixtures'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:252:in `create_fixtures'
+    /vendor/rails/activerecord/lib/active_record/base.rb:954:in `silence'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:249:in `create_fixtures'
+    /app/controllers/fixtures_controller.rb:9:in `create'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1140:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:695:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:687:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:133:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:668:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:105:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:667:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:494:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:683:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:122:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:346:in `process'
+    /vendor/rails/railties/lib/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /lib/tasks/flex.rake:78:in `run_test_server'
+    /lib/tasks/flex.rake:74:in `run_test_server'
+    /lib/tasks/flex.rake:48
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:392:in `execute'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:392:in `execute'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:362:in `invoke'
+    /usr/local/lib/ruby/1.8/thread.rb:135:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:355:in `invoke'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1739:in `top_level'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1739:in `top_level'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1761:in `standard_exception_handling'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1733:in `top_level'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1711:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1761:in `standard_exception_handling'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1708:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/bin/rake:7
+    /usr/local/bin/rake:16
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2007-09-21 10:17:45) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"user"=>{"password_confirmation"=>nil, "password"=>nil, "email"=>nil}, "format"=>"xml", "action"=>"create", "controller"=>"users"}
+
+
+NameError (uninitialized constant UsersController):
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:266:in `load_missing_constant'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:452:in `const_missing'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:464:in `const_missing'
+    /vendor/rails/activesupport/lib/active_support/inflector.rb:257:in `constantize'
+    /vendor/rails/activesupport/lib/active_support/core_ext/string/inflections.rb:148:in `constantize'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1371:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /lib/tasks/flex.rake:78:in `run_test_server'
+    /lib/tasks/flex.rake:74:in `run_test_server'
+    /lib/tasks/flex.rake:48
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:392:in `execute'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:392:in `execute'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:362:in `invoke'
+    /usr/local/lib/ruby/1.8/thread.rb:135:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:355:in `invoke'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1739:in `top_level'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1739:in `top_level'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1761:in `standard_exception_handling'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1733:in `top_level'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1711:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1761:in `standard_exception_handling'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1708:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/bin/rake:7
+    /usr/local/bin/rake:16
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 10:17:45) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>".F.F\nTime: 0.348 seconds\nThere were 2 failures:\n1) testFindUser (tests::TestUsers)\n\tError: Fixuture creation - expected true but was false\n2) testSignupFail (tests::TestUsers)\n\tError: expected true but was false\n\nFAILURES!!!\nTests run: 2,  Failures: 2,  Errors: 0"}, "action"=>"test_results", "controller"=>"fixtures"}
+
+
+Errno::ENOENT (No such file or directory - /Users/daniel/SvnProjects/for/onlineauction/rails/flex/bin/test_results.txt):
+    /app/controllers/fixtures_controller.rb:24:in `initialize'
+    /app/controllers/fixtures_controller.rb:24:in `test_results'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1140:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:695:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:687:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:133:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:668:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:105:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:667:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:494:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:683:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:122:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:346:in `process'
+    /vendor/rails/railties/lib/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /lib/tasks/flex.rake:78:in `run_test_server'
+    /lib/tasks/flex.rake:74:in `run_test_server'
+    /lib/tasks/flex.rake:48
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:392:in `execute'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:392:in `execute'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:362:in `invoke'
+    /usr/local/lib/ruby/1.8/thread.rb:135:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:355:in `invoke'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1739:in `top_level'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1739:in `top_level'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1761:in `standard_exception_handling'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1733:in `top_level'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1711:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1761:in `standard_exception_handling'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1708:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/bin/rake:7
+    /usr/local/bin/rake:16
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+FixturesController: missing default helper path fixtures_helper
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 10:24:14) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+  [4;36;1mSQL (0.000147)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000114)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Errno::ENOENT (No such file or directory - /Users/daniel/SvnProjects/for/onlineauction/rails/test/fixtures/users):
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:347:in `open'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:347:in `read_fixture_files'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:284:in `initialize'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:253:in `create_fixtures'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:252:in `create_fixtures'
+    /vendor/rails/activerecord/lib/active_record/base.rb:954:in `silence'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:249:in `create_fixtures'
+    /app/controllers/fixtures_controller.rb:9:in `create'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1140:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:695:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:687:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:133:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:668:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:105:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:667:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:494:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:683:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:122:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:346:in `process'
+    /vendor/rails/railties/lib/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2007-09-21 10:24:14) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"user"=>{"password_confirmation"=>nil, "password"=>nil, "email"=>nil}, "format"=>"xml", "action"=>"create", "controller"=>"users"}
+
+
+NameError (uninitialized constant UsersController):
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:266:in `load_missing_constant'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:452:in `const_missing'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:464:in `const_missing'
+    /vendor/rails/activesupport/lib/active_support/inflector.rb:257:in `constantize'
+    /vendor/rails/activesupport/lib/active_support/core_ext/string/inflections.rb:148:in `constantize'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1371:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 10:24:14) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>".F.F\nTime: 0.262 seconds\nThere were 2 failures:\n1) testFindUser (tests::TestUsers)\n\tError: Fixuture creation - expected true but was false\n2) testSignupFail (tests::TestUsers)\n\tError: expected true but was false\n\nFAILURES!!!\nTests run: 2,  Failures: 2,  Errors: 0"}, "action"=>"test_results", "controller"=>"fixtures"}
+
+
+Errno::ENOENT (No such file or directory - /Users/daniel/SvnProjects/for/onlineauction/rails/flex/bin/test_results.txt):
+    /app/controllers/fixtures_controller.rb:24:in `initialize'
+    /app/controllers/fixtures_controller.rb:24:in `test_results'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1140:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:695:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:687:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:133:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:668:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:105:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:667:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:494:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:683:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:122:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:346:in `process'
+    /vendor/rails/railties/lib/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 10:40:06) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+
+
+Errno::ENOENT (No such file or directory - /Users/daniel/SvnProjects/for/onlineauction/rails/test/fixtures/users):
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:347:in `open'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:347:in `read_fixture_files'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:284:in `initialize'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:253:in `create_fixtures'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:252:in `create_fixtures'
+    /vendor/rails/activerecord/lib/active_record/base.rb:954:in `silence'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:249:in `create_fixtures'
+    /app/controllers/fixtures_controller.rb:9:in `create'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1140:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:695:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:687:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:133:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:668:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:105:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:667:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:494:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:683:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:122:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:346:in `process'
+    /vendor/rails/railties/lib/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2007-09-21 10:40:06) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"user"=>{"password_confirmation"=>nil, "password"=>nil, "email"=>nil}, "format"=>"xml", "action"=>"create", "controller"=>"users"}
+
+
+NameError (uninitialized constant UsersController):
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:266:in `load_missing_constant'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:452:in `const_missing'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:464:in `const_missing'
+    /vendor/rails/activesupport/lib/active_support/inflector.rb:257:in `constantize'
+    /vendor/rails/activesupport/lib/active_support/core_ext/string/inflections.rb:148:in `constantize'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1371:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 10:40:06) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>".F.F\nTime: 0.153 seconds\nThere were 2 failures:\n1) testFindUser (tests::TestUsers)\n\tError: Fixuture creation - expected true but was false\n2) testSignupFail (tests::TestUsers)\n\tError: expected true but was false\n\nFAILURES!!!\nTests run: 2,  Failures: 2,  Errors: 0"}, "action"=>"test_results", "controller"=>"fixtures"}
+
+
+Errno::ENOENT (No such file or directory - /Users/daniel/SvnProjects/for/onlineauction/rails/flex/bin/test_results.txt):
+    /app/controllers/fixtures_controller.rb:24:in `initialize'
+    /app/controllers/fixtures_controller.rb:24:in `test_results'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1140:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:695:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:687:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:133:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:668:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:105:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:667:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:494:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:683:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:122:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:346:in `process'
+    /vendor/rails/railties/lib/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 10:41:40) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+
+
+Errno::ENOENT (No such file or directory - /Users/daniel/SvnProjects/for/onlineauction/rails/test/fixtures/users):
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:347:in `open'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:347:in `read_fixture_files'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:284:in `initialize'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:253:in `create_fixtures'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:252:in `create_fixtures'
+    /vendor/rails/activerecord/lib/active_record/base.rb:954:in `silence'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:249:in `create_fixtures'
+    /app/controllers/fixtures_controller.rb:9:in `create'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1140:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:695:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:687:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:133:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:668:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:105:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:667:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:494:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:683:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:122:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:346:in `process'
+    /vendor/rails/railties/lib/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2007-09-21 10:41:40) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"user"=>{"password_confirmation"=>nil, "password"=>nil, "email"=>nil}, "format"=>"xml", "action"=>"create", "controller"=>"users"}
+
+
+NameError (uninitialized constant UsersController):
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:266:in `load_missing_constant'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:452:in `const_missing'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:464:in `const_missing'
+    /vendor/rails/activesupport/lib/active_support/inflector.rb:257:in `constantize'
+    /vendor/rails/activesupport/lib/active_support/core_ext/string/inflections.rb:148:in `constantize'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1371:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 10:41:40) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>".F.F\nTime: 0.233 seconds\nThere were 2 failures:\n1) testFindUser (tests::TestUsers)\n\tError: Fixuture creation - expected true but was false\n2) testSignupFail (tests::TestUsers)\n\tError: expected true but was false\n\nFAILURES!!!\nTests run: 2,  Failures: 2,  Errors: 0"}, "action"=>"test_results", "controller"=>"fixtures"}
+
+
+Errno::ENOENT (No such file or directory - /Users/daniel/SvnProjects/for/onlineauction/rails/flex/bin/test_results.txt):
+    /app/controllers/fixtures_controller.rb:24:in `initialize'
+    /app/controllers/fixtures_controller.rb:24:in `test_results'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1140:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:695:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:687:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:133:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:668:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:105:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:667:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:494:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:683:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:122:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:346:in `process'
+    /vendor/rails/railties/lib/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+FixturesController: missing default helper path fixtures_helper
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 10:42:45) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+  [4;36;1mSQL (0.000143)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000092)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Errno::ENOENT (No such file or directory - /Users/daniel/SvnProjects/for/onlineauction/rails/test/fixtures/users):
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:347:in `open'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:347:in `read_fixture_files'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:284:in `initialize'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:253:in `create_fixtures'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:252:in `create_fixtures'
+    /vendor/rails/activerecord/lib/active_record/base.rb:954:in `silence'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:249:in `create_fixtures'
+    /app/controllers/fixtures_controller.rb:9:in `create'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1140:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:695:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:687:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:133:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:668:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:105:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:667:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:494:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:683:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:122:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:346:in `process'
+    /vendor/rails/railties/lib/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2007-09-21 10:42:45) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"user"=>{"password_confirmation"=>nil, "password"=>nil, "email"=>nil}, "format"=>"xml", "action"=>"create", "controller"=>"users"}
+
+
+NameError (uninitialized constant UsersController):
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:266:in `load_missing_constant'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:452:in `const_missing'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:464:in `const_missing'
+    /vendor/rails/activesupport/lib/active_support/inflector.rb:257:in `constantize'
+    /vendor/rails/activesupport/lib/active_support/core_ext/string/inflections.rb:148:in `constantize'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1371:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 10:42:45) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>".F.F\nTime: 0.256 seconds\nThere were 2 failures:\n1) testFindUser (tests::TestUsers)\n\tError: Fixuture creation - expected true but was false\n2) testSignupFail (tests::TestUsers)\n\tError: expected true but was false\n\nFAILURES!!!\nTests run: 2,  Failures: 2,  Errors: 0"}, "action"=>"test_results", "controller"=>"fixtures"}
+@@@WRITING to :/Users/daniel/SvnProjects/for/onlineauction/rails/../flex/bin/test_results.txt
+Completed in 0.00101 (987 reqs/sec) | Rendering: 0.00006 (5%) | DB: 0.00023 (23%) | 200 OK [http://localhost/fixtures/new/test_results]
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 10:44:59) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'online_auction_test.users' doesn't exist: DELETE FROM users):
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:135:in `log'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:250:in `execute'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:265:in `update'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:47:in `delete'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:49:in `delete'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:288:in `delete_existing_fixtures'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:259:in `create_fixtures'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:259:in `create_fixtures'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:59:in `transaction'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:72:in `method_missing'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:258:in `create_fixtures'
+    /vendor/rails/activerecord/lib/active_record/base.rb:954:in `silence'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:249:in `create_fixtures'
+    /app/controllers/fixtures_controller.rb:9:in `create'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1140:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:695:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:687:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:133:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:668:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:105:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:667:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:494:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:683:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:122:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:346:in `process'
+    /vendor/rails/railties/lib/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2007-09-21 10:44:59) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"user"=>{"password_confirmation"=>nil, "password"=>nil, "email"=>nil}, "format"=>"xml", "action"=>"create", "controller"=>"users"}
+
+
+NameError (uninitialized constant UsersController):
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:266:in `load_missing_constant'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:452:in `const_missing'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:464:in `const_missing'
+    /vendor/rails/activesupport/lib/active_support/inflector.rb:257:in `constantize'
+    /vendor/rails/activesupport/lib/active_support/core_ext/string/inflections.rb:148:in `constantize'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1371:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 10:44:59) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>".F.F\nTime: 0.197 seconds\nThere were 2 failures:\n1) testFindUser (tests::TestUsers)\n\tError: Fixuture creation - expected true but was false\n2) testSignupFail (tests::TestUsers)\n\tError: expected true but was false\n\nFAILURES!!!\nTests run: 2,  Failures: 2,  Errors: 0"}, "action"=>"test_results", "controller"=>"fixtures"}
+@@@WRITING to :/Users/daniel/SvnProjects/for/onlineauction/rails/../flex/bin/test_results.txt
+Completed in 0.00071 (1404 reqs/sec) | Rendering: 0.00007 (9%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures/new/test_results]
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 10:45:35) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'online_auction_test.users' doesn't exist: DELETE FROM users):
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:135:in `log'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:250:in `execute'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:265:in `update'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:47:in `delete'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:49:in `delete'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:288:in `delete_existing_fixtures'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:259:in `create_fixtures'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:259:in `create_fixtures'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:59:in `transaction'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:72:in `method_missing'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:258:in `create_fixtures'
+    /vendor/rails/activerecord/lib/active_record/base.rb:954:in `silence'
+    /vendor/rails/activerecord/lib/active_record/fixtures.rb:249:in `create_fixtures'
+    /app/controllers/fixtures_controller.rb:9:in `create'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1140:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:695:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:687:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:133:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:668:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:105:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:667:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:494:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:683:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:122:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:346:in `process'
+    /vendor/rails/railties/lib/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2007-09-21 10:45:35) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"user"=>{"password_confirmation"=>nil, "password"=>nil, "email"=>nil}, "format"=>"xml", "action"=>"create", "controller"=>"users"}
+
+
+NameError (uninitialized constant UsersController):
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:266:in `load_missing_constant'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:452:in `const_missing'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:464:in `const_missing'
+    /vendor/rails/activesupport/lib/active_support/inflector.rb:257:in `constantize'
+    /vendor/rails/activesupport/lib/active_support/core_ext/string/inflections.rb:148:in `constantize'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1371:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 10:45:35) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>".F.F\nTime: 0.211 seconds\nThere were 2 failures:\n1) testFindUser (tests::TestUsers)\n\tError: Fixuture creation - expected true but was false\n2) testSignupFail (tests::TestUsers)\n\tError: expected true but was false\n\nFAILURES!!!\nTests run: 2,  Failures: 2,  Errors: 0"}, "action"=>"test_results", "controller"=>"fixtures"}
+@@@WRITING to :/Users/daniel/SvnProjects/for/onlineauction/rails/../flex/bin/test_results.txt
+Completed in 0.00124 (807 reqs/sec) | Rendering: 0.00008 (6%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures/new/test_results]
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 10:46:44) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+Completed in 0.03695 (27 reqs/sec) | Rendering: 0.00014 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures.xml]
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2007-09-21 10:46:44) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"1", "controller"=>"users"}
+
+
+NameError (uninitialized constant UsersController):
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:266:in `load_missing_constant'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:452:in `const_missing'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:464:in `const_missing'
+    /vendor/rails/activesupport/lib/active_support/inflector.rb:257:in `constantize'
+    /vendor/rails/activesupport/lib/active_support/core_ext/string/inflections.rb:148:in `constantize'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1371:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2007-09-21 10:46:44) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"user"=>{"password_confirmation"=>nil, "password"=>nil, "email"=>nil}, "format"=>"xml", "action"=>"create", "controller"=>"users"}
+
+
+NameError (uninitialized constant UsersController):
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:266:in `load_missing_constant'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:452:in `const_missing'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:464:in `const_missing'
+    /vendor/rails/activesupport/lib/active_support/inflector.rb:257:in `constantize'
+    /vendor/rails/activesupport/lib/active_support/core_ext/string/inflections.rb:148:in `constantize'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1371:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:38:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 10:46:44) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>".F.F\nTime: 0.174 seconds\nThere were 2 failures:\n1) testFindUser (tests::TestUsers)\n\tError: User 1 found - expected true but was false\n2) testSignupFail (tests::TestUsers)\n\tError: expected true but was false\n\nFAILURES!!!\nTests run: 2,  Failures: 2,  Errors: 0"}, "action"=>"test_results", "controller"=>"fixtures"}
+@@@WRITING to :/Users/daniel/SvnProjects/for/onlineauction/rails/../flex/bin/test_results.txt
+Completed in 0.00093 (1074 reqs/sec) | Rendering: 0.00007 (7%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures/new/test_results]
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 10:48:24) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+Completed in 0.04857 (20 reqs/sec) | Rendering: 0.00015 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures.xml]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2007-09-21 10:48:24) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.000350)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 1) [0m
+
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=1):
+    /vendor/rails/activerecord/lib/active_record/base.rb:1033:in `find_one'
+    /vendor/rails/activerecord/lib/active_record/base.rb:1016:in `find_from_ids'
+    /vendor/rails/activerecord/lib/active_record/base.rb:430:in `find'
+    /app/controllers/users_controller.rb:16:in `show'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1140:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:695:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:687:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:133:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:668:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:105:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:667:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:494:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:683:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:122:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:346:in `process'
+    /vendor/rails/railties/lib/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing UsersController#create (for 127.0.0.1 at 2007-09-21 10:48:24) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"user"=>{"password_confirmation"=>nil, "password"=>nil, "email"=>nil}, "format"=>"xml", "action"=>"create", "controller"=>"users"}
+
+
+NoMethodError (undefined method `password_confirmation=' for #<User:0x35b9754>):
+    /vendor/rails/activerecord/lib/active_record/attribute_methods.rb:168:in `method_missing'
+    /vendor/rails/activerecord/lib/active_record/base.rb:1822:in `attributes='
+    /vendor/rails/activerecord/lib/active_record/base.rb:1821:in `attributes='
+    /vendor/rails/activerecord/lib/active_record/base.rb:1650:in `initialize_without_callbacks'
+    /vendor/rails/activerecord/lib/active_record/callbacks.rb:225:in `initialize'
+    /app/controllers/users_controller.rb:43:in `create'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1140:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:695:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:687:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:133:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:668:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:105:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:667:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:494:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:683:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:122:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:346:in `process'
+    /vendor/rails/railties/lib/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 10:48:24) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>".F.F\nTime: 0.208 seconds\nThere were 2 failures:\n1) testFindUser (tests::TestUsers)\n\tError: User 1 found - expected true but was false\n2) testSignupFail (tests::TestUsers)\n\tError: expected true but was false\n\nFAILURES!!!\nTests run: 2,  Failures: 2,  Errors: 0"}, "action"=>"test_results", "controller"=>"fixtures"}
+@@@WRITING to :/Users/daniel/SvnProjects/for/onlineauction/rails/../flex/bin/test_results.txt
+Completed in 0.00107 (934 reqs/sec) | Rendering: 0.00007 (6%) | DB: 0.00035 (32%) | 200 OK [http://localhost/fixtures/new/test_results]
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 10:51:17) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+Completed in 0.00686 (145 reqs/sec) | Rendering: 0.00012 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures.xml]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2007-09-21 10:51:17) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Load (0.000552)[0m   [0mSELECT * FROM users WHERE (users.`id` = 1) [0m
+
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=1):
+    /vendor/rails/activerecord/lib/active_record/base.rb:1033:in `find_one'
+    /vendor/rails/activerecord/lib/active_record/base.rb:1016:in `find_from_ids'
+    /vendor/rails/activerecord/lib/active_record/base.rb:430:in `find'
+    /app/controllers/users_controller.rb:16:in `show'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1140:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:695:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:687:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:133:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:668:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:105:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:667:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:494:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:683:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:122:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:346:in `process'
+    /vendor/rails/railties/lib/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing UsersController#create (for 127.0.0.1 at 2007-09-21 10:51:17) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"user"=>{"password_confirmation"=>nil, "password"=>nil, "email"=>nil}, "format"=>"xml", "action"=>"create", "controller"=>"users"}
+
+
+NoMethodError (undefined method `password_confirmation=' for #<User:0x3509d68>):
+    /vendor/rails/activerecord/lib/active_record/attribute_methods.rb:168:in `method_missing'
+    /vendor/rails/activerecord/lib/active_record/base.rb:1822:in `attributes='
+    /vendor/rails/activerecord/lib/active_record/base.rb:1821:in `attributes='
+    /vendor/rails/activerecord/lib/active_record/base.rb:1650:in `initialize_without_callbacks'
+    /vendor/rails/activerecord/lib/active_record/callbacks.rb:225:in `initialize'
+    /app/controllers/users_controller.rb:43:in `create'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1140:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:695:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:687:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:133:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:668:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:105:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:667:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:494:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:683:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:122:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:346:in `process'
+    /vendor/rails/railties/lib/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 10:51:17) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>".F.F\nTime: 0.167 seconds\nThere were 2 failures:\n1) testFindUser (tests::TestUsers)\n\tError: User 1 found - expected true but was false\n2) testSignupFail (tests::TestUsers)\n\tError: expected true but was false\n\nFAILURES!!!\nTests run: 2,  Failures: 2,  Errors: 0"}, "action"=>"test_results", "controller"=>"fixtures"}
+@@@WRITING to :/Users/daniel/SvnProjects/for/onlineauction/rails/../flex/bin/test_results.txt
+Completed in 0.00064 (1560 reqs/sec) | Rendering: 0.00005 (8%) | DB: 0.00055 (86%) | 200 OK [http://localhost/fixtures/new/test_results]
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 10:51:56) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+Completed in 0.00667 (149 reqs/sec) | Rendering: 0.00023 (3%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures.xml]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2007-09-21 10:51:56) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.015938)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 1) [0m
+Completed in 0.01993 (50 reqs/sec) | Rendering: 0.00268 (13%) | DB: 0.01594 (79%) | 200 OK [http://localhost/users/1.xml]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2007-09-21 10:51:56) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"user"=>{"password_confirmation"=>nil, "password"=>nil, "email"=>nil}, "format"=>"xml", "action"=>"create", "controller"=>"users"}
+
+
+NoMethodError (undefined method `password_confirmation=' for #<User:0x34a8680>):
+    /vendor/rails/activerecord/lib/active_record/attribute_methods.rb:168:in `method_missing'
+    /vendor/rails/activerecord/lib/active_record/base.rb:1822:in `attributes='
+    /vendor/rails/activerecord/lib/active_record/base.rb:1821:in `attributes='
+    /vendor/rails/activerecord/lib/active_record/base.rb:1650:in `initialize_without_callbacks'
+    /vendor/rails/activerecord/lib/active_record/callbacks.rb:225:in `initialize'
+    /app/controllers/users_controller.rb:43:in `create'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1140:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:695:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:687:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:133:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:668:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:105:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:667:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:494:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:683:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:122:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:346:in `process'
+    /vendor/rails/railties/lib/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 10:51:56) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>"..F\nTime: 0.188 seconds\nThere was 1 failure:\n1) testSignupFail (tests::TestUsers)\n\tError: expected true but was false\n\nFAILURES!!!\nTests run: 2,  Failures: 1,  Errors: 0"}, "action"=>"test_results", "controller"=>"fixtures"}
+@@@WRITING to :/Users/daniel/SvnProjects/for/onlineauction/rails/../flex/bin/test_results.txt
+Completed in 0.00089 (1129 reqs/sec) | Rendering: 0.00009 (10%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures/new/test_results]
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 10:52:37) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+Completed in 0.00619 (161 reqs/sec) | Rendering: 0.00017 (2%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures.xml]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2007-09-21 10:52:37) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"3", "controller"=>"users"}
+  [4;35;1mUser Load (0.000472)[0m   [0mSELECT * FROM users WHERE (users.`id` = 3) [0m
+Completed in 0.00418 (239 reqs/sec) | Rendering: 0.00244 (58%) | DB: 0.00047 (11%) | 200 OK [http://localhost/users/3.xml]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2007-09-21 10:52:37) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"user"=>{"password_confirmation"=>nil, "password"=>nil, "email"=>nil}, "format"=>"xml", "action"=>"create", "controller"=>"users"}
+
+
+NoMethodError (undefined method `password_confirmation=' for #<User:0x3447a10>):
+    /vendor/rails/activerecord/lib/active_record/attribute_methods.rb:168:in `method_missing'
+    /vendor/rails/activerecord/lib/active_record/base.rb:1822:in `attributes='
+    /vendor/rails/activerecord/lib/active_record/base.rb:1821:in `attributes='
+    /vendor/rails/activerecord/lib/active_record/base.rb:1650:in `initialize_without_callbacks'
+    /vendor/rails/activerecord/lib/active_record/callbacks.rb:225:in `initialize'
+    /app/controllers/users_controller.rb:43:in `create'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1140:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:695:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:687:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:133:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:668:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:105:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:667:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:494:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:683:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:122:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:346:in `process'
+    /vendor/rails/railties/lib/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 10:52:37) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>"..F\nTime: 0.28 seconds\nThere was 1 failure:\n1) testSignupFail (tests::TestUsers)\n\tError: expected true but was false\n\nFAILURES!!!\nTests run: 2,  Failures: 1,  Errors: 0"}, "action"=>"test_results", "controller"=>"fixtures"}
+@@@WRITING to :/Users/daniel/SvnProjects/for/onlineauction/rails/../flex/bin/test_results.txt
+Completed in 0.00088 (1131 reqs/sec) | Rendering: 0.00006 (6%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures/new/test_results]
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 10:53:11) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+Completed in 0.00577 (173 reqs/sec) | Rendering: 0.00011 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures.xml]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2007-09-21 10:53:11) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"4", "controller"=>"users"}
+  [4;36;1mUser Load (0.000990)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 4) [0m
+
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=4):
+    /vendor/rails/activerecord/lib/active_record/base.rb:1033:in `find_one'
+    /vendor/rails/activerecord/lib/active_record/base.rb:1016:in `find_from_ids'
+    /vendor/rails/activerecord/lib/active_record/base.rb:430:in `find'
+    /app/controllers/users_controller.rb:16:in `show'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1140:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:695:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:687:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:133:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:668:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:105:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:667:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:494:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:683:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:122:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:346:in `process'
+    /vendor/rails/railties/lib/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing UsersController#create (for 127.0.0.1 at 2007-09-21 10:53:11) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"user"=>{"password_confirmation"=>nil, "password"=>nil, "email"=>nil}, "format"=>"xml", "action"=>"create", "controller"=>"users"}
+
+
+NoMethodError (undefined method `password_confirmation=' for #<User:0x36d9544>):
+    /vendor/rails/activerecord/lib/active_record/attribute_methods.rb:168:in `method_missing'
+    /vendor/rails/activerecord/lib/active_record/base.rb:1822:in `attributes='
+    /vendor/rails/activerecord/lib/active_record/base.rb:1821:in `attributes='
+    /vendor/rails/activerecord/lib/active_record/base.rb:1650:in `initialize_without_callbacks'
+    /vendor/rails/activerecord/lib/active_record/callbacks.rb:225:in `initialize'
+    /app/controllers/users_controller.rb:43:in `create'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1140:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:695:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:687:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:133:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:668:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:105:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:667:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:494:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:683:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:122:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:346:in `process'
+    /vendor/rails/railties/lib/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 10:53:11) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>".F.F\nTime: 0.215 seconds\nThere were 2 failures:\n1) testFindUser (tests::TestUsers)\n\tError: Find User user call - expected true but was false\n2) testSignupFail (tests::TestUsers)\n\tError: expected true but was false\n\nFAILURES!!!\nTests run: 2,  Failures: 2,  Errors: 0"}, "action"=>"test_results", "controller"=>"fixtures"}
+@@@WRITING to :/Users/daniel/SvnProjects/for/onlineauction/rails/../flex/bin/test_results.txt
+Completed in 0.00066 (1508 reqs/sec) | Rendering: 0.00006 (8%) | DB: 0.00099 (149%) | 200 OK [http://localhost/fixtures/new/test_results]
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 10:55:04) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+Completed in 0.00835 (119 reqs/sec) | Rendering: 0.00015 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures.xml]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2007-09-21 10:55:04) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Load (0.000430)[0m   [0mSELECT * FROM users WHERE (users.`id` = 1) [0m
+Completed in 0.00413 (241 reqs/sec) | Rendering: 0.00253 (61%) | DB: 0.00043 (10%) | 200 OK [http://localhost/users/1.xml]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2007-09-21 10:55:19) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"user"=>{"password_confirmation"=>nil, "password"=>nil, "email"=>nil}, "format"=>"xml", "action"=>"create", "controller"=>"users"}
+
+
+NoMethodError (undefined method `password_confirmation=' for #<User:0x3641050>):
+    /vendor/rails/activerecord/lib/active_record/attribute_methods.rb:168:in `method_missing'
+    /vendor/rails/activerecord/lib/active_record/base.rb:1822:in `attributes='
+    /vendor/rails/activerecord/lib/active_record/base.rb:1821:in `attributes='
+    /vendor/rails/activerecord/lib/active_record/base.rb:1650:in `initialize_without_callbacks'
+    /vendor/rails/activerecord/lib/active_record/callbacks.rb:225:in `initialize'
+    /app/controllers/users_controller.rb:43:in `create'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1140:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:695:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:687:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:133:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:668:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:105:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:667:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:494:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:683:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:122:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:346:in `process'
+    /vendor/rails/railties/lib/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 10:55:19) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>"..F\nTime: 15.586 seconds\nThere was 1 failure:\n1) testSignupFail (tests::TestUsers)\n\tError: expected true but was false\n\nFAILURES!!!\nTests run: 2,  Failures: 1,  Errors: 0"}, "action"=>"test_results", "controller"=>"fixtures"}
+@@@WRITING to :/Users/daniel/SvnProjects/for/onlineauction/rails/../flex/bin/test_results.txt
+Completed in 0.00164 (608 reqs/sec) | Rendering: 0.00008 (4%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures/new/test_results]
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 10:55:36) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+Completed in 0.00979 (102 reqs/sec) | Rendering: 0.00016 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures.xml]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2007-09-21 10:55:36) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.000430)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 1) [0m
+Completed in 0.00399 (250 reqs/sec) | Rendering: 0.00239 (59%) | DB: 0.00043 (10%) | 200 OK [http://localhost/users/1.xml]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2007-09-21 10:55:36) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"user"=>{"password_confirmation"=>nil, "password"=>nil, "email"=>nil}, "format"=>"xml", "action"=>"create", "controller"=>"users"}
+
+
+NoMethodError (undefined method `password_confirmation=' for #<User:0x35d0ad0>):
+    /vendor/rails/activerecord/lib/active_record/attribute_methods.rb:168:in `method_missing'
+    /vendor/rails/activerecord/lib/active_record/base.rb:1822:in `attributes='
+    /vendor/rails/activerecord/lib/active_record/base.rb:1821:in `attributes='
+    /vendor/rails/activerecord/lib/active_record/base.rb:1650:in `initialize_without_callbacks'
+    /vendor/rails/activerecord/lib/active_record/callbacks.rb:225:in `initialize'
+    /app/controllers/users_controller.rb:43:in `create'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1140:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:695:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:687:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:133:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:668:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:105:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:667:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:494:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:683:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:122:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:346:in `process'
+    /vendor/rails/railties/lib/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    ./script/server:3
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 10:55:36) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>".F.F\nTime: 0.185 seconds\nThere were 2 failures:\n1) testFindUser (tests::TestUsers)\n\tError: expected:<Daniel2> but was:<Daniel>\n2) testSignupFail (tests::TestUsers)\n\tError: expected true but was false\n\nFAILURES!!!\nTests run: 2,  Failures: 2,  Errors: 0"}, "action"=>"test_results", "controller"=>"fixtures"}
+@@@WRITING to :/Users/daniel/SvnProjects/for/onlineauction/rails/../flex/bin/test_results.txt
+Completed in 0.00102 (977 reqs/sec) | Rendering: 0.00007 (6%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures/new/test_results]
+FixturesController: missing default helper path fixtures_helper
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 11:00:19) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+  [4;36;1mSQL (0.000201)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000115)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Completed in 0.06387 (15 reqs/sec) | Rendering: 0.00013 (0%) | DB: 0.00032 (0%) | 200 OK [http://localhost/fixtures.xml]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2007-09-21 11:00:19) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.000517)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 1) [0m
+Completed in 0.02230 (44 reqs/sec) | Rendering: 0.01877 (84%) | DB: 0.00052 (2%) | 200 OK [http://localhost/users/1.xml]
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 11:00:19) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>".\nTime: 0.591 seconds\n\nOK (1 test)"}, "action"=>"test_results", "controller"=>"fixtures"}
+@@@WRITING to :/Users/daniel/SvnProjects/for/onlineauction/rails/../flex/bin/test_results.txt
+Completed in 0.00061 (1639 reqs/sec) | Rendering: 0.00006 (9%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures/new/test_results]
+FixturesController: missing default helper path fixtures_helper
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 11:12:42) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+  [4;36;1mSQL (0.000193)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000096)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Completed in 0.03390 (29 reqs/sec) | Rendering: 0.00015 (0%) | DB: 0.00029 (0%) | 200 OK [http://localhost/fixtures.xml]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2007-09-21 11:12:42) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.000419)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 1) [0m
+Completed in 0.02382 (41 reqs/sec) | Rendering: 0.01970 (82%) | DB: 0.00042 (1%) | 200 OK [http://localhost/users/1.xml]
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 11:12:42) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>".\nTime: 0.399 seconds\n\nOK (1 test)"}, "action"=>"test_results", "controller"=>"fixtures"}
+@@@WRITING to :/Users/daniel/SvnProjects/for/onlineauction/rails/../flex/bin/test_results.txt
+Completed in 0.00059 (1686 reqs/sec) | Rendering: 0.00006 (9%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures/new/test_results]
+FixturesController: missing default helper path fixtures_helper
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 11:14:27) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+  [4;36;1mSQL (0.000171)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000093)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Completed in 0.02599 (38 reqs/sec) | Rendering: 0.00014 (0%) | DB: 0.00026 (1%) | 200 OK [http://localhost/fixtures.xml]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2007-09-21 11:14:27) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.000424)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 1) [0m
+Completed in 0.02156 (46 reqs/sec) | Rendering: 0.01774 (82%) | DB: 0.00042 (1%) | 200 OK [http://localhost/users/1.xml]
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 11:14:27) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>".\nTime: 0.781 seconds\n\nOK (1 test)"}, "action"=>"test_results", "controller"=>"fixtures"}
+@@@WRITING to :/Users/daniel/SvnProjects/for/onlineauction/rails/../flex/bin/test_results.txt
+Completed in 0.00129 (774 reqs/sec) | Rendering: 0.00007 (5%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures/new/test_results]
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 11:14:43) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+Completed in 0.00580 (172 reqs/sec) | Rendering: 0.00018 (3%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures.xml]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2007-09-21 11:14:43) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Load (0.000411)[0m   [0mSELECT * FROM users WHERE (users.`id` = 1) [0m
+Completed in 0.00424 (235 reqs/sec) | Rendering: 0.00257 (60%) | DB: 0.00041 (9%) | 200 OK [http://localhost/users/1.xml]
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 11:14:43) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>".\nTime: 0.103 seconds\n\nOK (1 test)"}, "action"=>"test_results", "controller"=>"fixtures"}
+@@@WRITING to :/Users/daniel/SvnProjects/for/onlineauction/rails/../flex/bin/test_results.txt
+Completed in 0.00087 (1145 reqs/sec) | Rendering: 0.00007 (8%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures/new/test_results]
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 11:15:09) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+Completed in 0.00568 (175 reqs/sec) | Rendering: 0.00012 (2%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures.xml]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2007-09-21 11:15:09) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.000455)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 1) [0m
+Completed in 0.00363 (275 reqs/sec) | Rendering: 0.00194 (53%) | DB: 0.00046 (12%) | 200 OK [http://localhost/users/1.xml]
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 11:15:09) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>".\nTime: 0.104 seconds\n\nOK (1 test)"}, "action"=>"test_results", "controller"=>"fixtures"}
+@@@WRITING to :/Users/daniel/SvnProjects/for/onlineauction/rails/../flex/bin/test_results.txt
+Completed in 0.00116 (860 reqs/sec) | Rendering: 0.00007 (5%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures/new/test_results]
+FixturesController: missing default helper path fixtures_helper
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 11:16:48) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+  [4;36;1mSQL (0.000148)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000090)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Completed in 0.01534 (65 reqs/sec) | Rendering: 0.00011 (0%) | DB: 0.00024 (1%) | 200 OK [http://localhost/fixtures.xml]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2007-09-21 11:16:48) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.000410)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 1) [0m
+Completed in 0.01927 (51 reqs/sec) | Rendering: 0.01533 (79%) | DB: 0.00041 (2%) | 200 OK [http://localhost/users/1.xml]
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 11:16:48) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>".\nTime: 0.359 seconds\n\nOK (1 test)"}, "action"=>"test_results", "controller"=>"fixtures"}
+@@@WRITING to :/Users/daniel/SvnProjects/for/onlineauction/rails/../flex/bin/test_results.txt
+Completed in 0.00135 (740 reqs/sec) | Rendering: 0.00007 (5%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures/new/test_results]
+FixturesController: missing default helper path fixtures_helper
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 11:18:09) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+  [4;36;1mSQL (0.000152)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000093)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Completed in 0.01682 (59 reqs/sec) | Rendering: 0.00015 (0%) | DB: 0.00025 (1%) | 200 OK [http://localhost/fixtures.xml]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2007-09-21 11:18:09) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.000433)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 1) [0m
+Completed in 0.02350 (42 reqs/sec) | Rendering: 0.01978 (84%) | DB: 0.00043 (1%) | 200 OK [http://localhost/users/1.xml]
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 11:18:09) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>".F\nTime: 0.346 seconds\nThere was 1 failure:\n1) testFindUser (tests::TestUsers)\n\tError: expected:<George> but was:<Daniel>\n\nFAILURES!!!\nTests run: 1,  Failures: 1,  Errors: 0"}, "action"=>"test_results", "controller"=>"fixtures"}
+@@@WRITING to :/Users/daniel/SvnProjects/for/onlineauction/rails/../flex/bin/test_results.txt
+Completed in 0.00281 (355 reqs/sec) | Rendering: 0.00007 (2%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures/new/test_results]
+FixturesController: missing default helper path fixtures_helper
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 11:22:12) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+  [4;36;1mSQL (0.000151)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000083)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Completed in 0.03293 (30 reqs/sec) | Rendering: 0.00015 (0%) | DB: 0.00023 (0%) | 200 OK [http://localhost/fixtures.xml]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2007-09-21 11:22:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.000448)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 1) [0m
+Completed in 0.02122 (47 reqs/sec) | Rendering: 0.01690 (79%) | DB: 0.00045 (2%) | 200 OK [http://localhost/users/1.xml]
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 11:22:12) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>".F\nTime: 0.381 seconds\nThere was 1 failure:\n1) testFindUser (tests::TestUsers)\n\tError: expected:<George> but was:<Daniel>\n\nFAILURES!!!\nTests run: 1,  Failures: 1,  Errors: 0"}, "action"=>"test_results", "controller"=>"fixtures"}
+@@@WRITING to :/Users/daniel/SvnProjects/for/onlineauction/rails/../flex/bin/test_results.txt
+Completed in 0.00156 (638 reqs/sec) | Rendering: 0.00007 (4%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures/new/test_results]
+FixturesController: missing default helper path fixtures_helper
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 11:23:12) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+  [4;36;1mSQL (0.000186)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000094)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Completed in 0.11476 (8 reqs/sec) | Rendering: 0.00020 (0%) | DB: 0.00028 (0%) | 200 OK [http://localhost/fixtures.xml]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2007-09-21 11:23:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.000472)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 1) [0m
+Completed in 0.02361 (42 reqs/sec) | Rendering: 0.01968 (83%) | DB: 0.00047 (1%) | 200 OK [http://localhost/users/1.xml]
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 11:23:12) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>".\nTime: 0.465 seconds\n\nOK (1 test)"}, "action"=>"test_results", "controller"=>"fixtures"}
+@@@WRITING to :/Users/daniel/SvnProjects/for/onlineauction/rails/../flex/bin/test_results.txt
+Completed in 0.00164 (609 reqs/sec) | Rendering: 0.00008 (5%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures/new/test_results]
+FixturesController: missing default helper path fixtures_helper
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 11:43:45) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+  [4;36;1mSQL (0.000148)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000101)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Completed in 0.00308 (324 reqs/sec) | Rendering: 0.00009 (3%) | DB: 0.00025 (8%) | 200 OK [http://localhost/fixtures.xml]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2007-09-21 11:43:45) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (0.003225)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.001629)[0m   [0mSELECT * FROM users WHERE (users.`id` = 1) [0m
+
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=1):
+    /vendor/rails/activerecord/lib/active_record/base.rb:1033:in `find_one'
+    /vendor/rails/activerecord/lib/active_record/base.rb:1016:in `find_from_ids'
+    /vendor/rails/activerecord/lib/active_record/base.rb:430:in `find'
+    /app/controllers/users_controller.rb:16:in `show'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1140:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:695:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:687:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:133:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:668:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:105:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:667:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:494:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:683:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:122:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:346:in `process'
+    /vendor/rails/railties/lib/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /lib/tasks/flex.rake:78:in `run_test_server'
+    /lib/tasks/flex.rake:74:in `run_test_server'
+    /lib/tasks/flex.rake:48
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:392:in `execute'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:392:in `execute'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:362:in `invoke'
+    /usr/local/lib/ruby/1.8/thread.rb:135:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:355:in `invoke'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1739:in `top_level'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1739:in `top_level'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1761:in `standard_exception_handling'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1733:in `top_level'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1711:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1761:in `standard_exception_handling'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1708:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/bin/rake:7
+    /usr/local/bin/rake:16
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 11:43:45) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>".F\nTime: 0.363 seconds\nThere was 1 failure:\n1) testFindUser (tests::TestUsers)\n\tError: Find User call - expected true but was false\n\nFAILURES!!!\nTests run: 1,  Failures: 1,  Errors: 0"}, "action"=>"test_results", "controller"=>"fixtures"}
+@@@WRITING to :/Users/daniel/SvnProjects/for/onlineauction/rails/../flex/bin/test_results.txt
+Completed in 0.00145 (689 reqs/sec) | Rendering: 0.00030 (20%) | DB: 0.00485 (334%) | 200 OK [http://localhost/fixtures/new/test_results]
+FixturesController: missing default helper path fixtures_helper
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 11:44:26) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+  [4;36;1mSQL (0.000163)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000092)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Completed in 0.00291 (343 reqs/sec) | Rendering: 0.00009 (3%) | DB: 0.00026 (8%) | 200 OK [http://localhost/fixtures.xml]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2007-09-21 11:44:26) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (0.003359)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mUser Load (0.000391)[0m   [0mSELECT * FROM users WHERE (users.`id` = 1) [0m
+
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=1):
+    /vendor/rails/activerecord/lib/active_record/base.rb:1033:in `find_one'
+    /vendor/rails/activerecord/lib/active_record/base.rb:1016:in `find_from_ids'
+    /vendor/rails/activerecord/lib/active_record/base.rb:430:in `find'
+    /app/controllers/users_controller.rb:16:in `show'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1140:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:695:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:687:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:133:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:668:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:105:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching.rb:667:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:494:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:683:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:122:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:346:in `process'
+    /vendor/rails/railties/lib/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /lib/tasks/flex.rake:78:in `run_test_server'
+    /lib/tasks/flex.rake:74:in `run_test_server'
+    /lib/tasks/flex.rake:48
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:392:in `execute'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:392:in `execute'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:362:in `invoke'
+    /usr/local/lib/ruby/1.8/thread.rb:135:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:355:in `invoke'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1739:in `top_level'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1739:in `top_level'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1761:in `standard_exception_handling'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1733:in `top_level'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1711:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1761:in `standard_exception_handling'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/lib/rake.rb:1708:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/rake-0.7.3/bin/rake:7
+    /usr/local/bin/rake:16
+
+
+Rendering /Users/daniel/SvnProjects/for/onlineauction/rails/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 11:44:27) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>".F\nTime: 0.373 seconds\nThere was 1 failure:\n1) testFindUser (tests::TestUsers)\n\tError: Find User call - expected true but was false\n\nFAILURES!!!\nTests run: 1,  Failures: 1,  Errors: 0"}, "action"=>"test_results", "controller"=>"fixtures"}
+@@@WRITING to :/Users/daniel/SvnProjects/for/onlineauction/rails/../flex/bin/test_results.txt
+Completed in 0.00071 (1400 reqs/sec) | Rendering: 0.00006 (8%) | DB: 0.00375 (525%) | 200 OK [http://localhost/fixtures/new/test_results]
+FixturesController: missing default helper path fixtures_helper
+
+
+Processing FixturesController#create (for 127.0.0.1 at 2007-09-21 11:45:14) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"create", "controller"=>"fixtures", "fixtures"=>{"fixture"=>"users"}}
+  [4;36;1mSQL (0.000256)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000140)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Completed in 0.01875 (53 reqs/sec) | Rendering: 0.00016 (0%) | DB: 0.00040 (2%) | 200 OK [http://localhost/fixtures.xml]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2007-09-21 11:45:14) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"format"=>"xml", "action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Load (0.000413)[0m   [0;1mSELECT * FROM users WHERE (users.`id` = 1) [0m
+Completed in 0.02017 (49 reqs/sec) | Rendering: 0.01685 (83%) | DB: 0.00041 (2%) | 200 OK [http://localhost/users/1.xml]
+
+
+Processing FixturesController#test_results (for 127.0.0.1 at 2007-09-21 11:45:14) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--6458f4c3ceaa859f28f0f658bef3f837d3112837
+  Parameters: {"results"=>{"data"=>".\nTime: 0.381 seconds\n\nOK (1 test)"}, "action"=>"test_results", "controller"=>"fixtures"}
+@@@WRITING to :/Users/daniel/SvnProjects/for/onlineauction/rails/../flex/bin/test_results.txt
+Completed in 0.00138 (725 reqs/sec) | Rendering: 0.00007 (5%) | DB: 0.00000 (0%) | 200 OK [http://localhost/fixtures/new/test_results]
