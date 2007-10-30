@@ -1,0 +1,26 @@
+<h1>Listing participants</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Prize</th>
+    <th>Raffle</th>
+    <th>Email</th>
+  </tr>
+
+<% for participant in @participants %>
+  <tr>
+    <td><%=h participant.name %></td>
+    <td><%=h participant.prize_id %></td>
+    <td><%=h participant.raffle_id %></td>
+    <td><%=h participant.email %></td>
+    <td><%= link_to 'Show',  raffle_participant_path(@raffle, participant) %></td>
+    <td><%= link_to 'Edit', edit_raffle_participant_path(@raffle, participant) %></td>
+    <td><%= link_to 'Destroy', participant, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New participant', new_raffle_participant_path(@raffle) %>

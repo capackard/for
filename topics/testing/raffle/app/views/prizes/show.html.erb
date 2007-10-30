@@ -1,0 +1,23 @@
+<p>
+  <b>Name:</b>
+  <%=h @prize.name %>
+</p>
+
+<p>
+  <b>Value:</b>
+  <%=h @prize.value %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @prize.description %>
+</p>
+
+<p>
+  <b>Raffle:</b>
+  <%=h @prize.raffle_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_raffle_prize_path(@raffle, @prize) %> |
+<%= link_to 'Back', raffle_prizes_path(@raffle) %>
