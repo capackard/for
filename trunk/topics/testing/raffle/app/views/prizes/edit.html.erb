@@ -1,0 +1,32 @@
+<h1>Editing prize</h1>
+
+<%= error_messages_for :prize %>
+
+<% form_for([@raffle, @prize]) do |f| %>
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <b>Value</b><br />
+    <%= f.text_field :value %>
+  </p>
+
+  <p>
+    <b>Description</b><br />
+    <%= f.text_field :description %>
+  </p>
+
+  <p>
+    <b>Raffle</b><br />
+    <%= f.text_field :raffle_id %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @prize %> |
+<%= link_to 'Back', raffle_prizes_path(@raffle) %>

@@ -1,0 +1,22 @@
+<h1>Editing raffle</h1>
+
+<%= error_messages_for :raffle %>
+
+<% form_for(@raffle) do |f| %>
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <b>Closed</b><br />
+    <%= f.check_box :closed %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @raffle %> |
+<%= link_to 'Back', raffles_path %>

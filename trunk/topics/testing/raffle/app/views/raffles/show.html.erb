@@ -1,0 +1,15 @@
+<p>
+  <b>Name:</b>
+  <%=h @raffle.name %>
+</p>
+
+<p>
+  <b>Closed:</b>
+  <%=h @raffle.closed %>
+</p>
+
+
+<%= link_to 'Edit', edit_raffle_path(@raffle) %> |
+<%= link_to 'Participants', raffle_participants_path(@raffle) %> |
+<%= link_to 'Prizes', raffle_prizes_path(@raffle) %> |
+<%= link_to 'Back', raffles_path %>

@@ -1,0 +1,23 @@
+<p>
+  <b>Name:</b>
+  <%=h @participant.name %>
+</p>
+
+<p>
+  <b>Prize:</b>
+  <%=h @participant.prize_id %>
+</p>
+
+<p>
+  <b>Raffle:</b>
+  <%=h @participant.raffle_id %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @participant.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_raffle_participant_path(@raffle, @participant) %> |
+<%= link_to 'Back', raffle_participants_path(@raffle) %>
