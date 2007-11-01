@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml" 
+		width="400" height="300" 
+		borderStyle="solid" 
+		borderColor="#de201f"
+		backgroundColor="#f5e5e5"
+		currentState="{errors.info? 'info' : ''}"
+		>
+  <mx:states>
+    <mx:State name="info">
+      <mx:SetProperty target="{title}" name="text" value="Information:"/>
+      <mx:SetStyle target="{mainTitle}" name="color" value="#008000"/>
+      <mx:SetStyle name="borderColor" value="#c8ecbf"/>
+      <mx:SetStyle name="backgroundColor" value="#e6fee0"/>
+      <mx:SetProperty target="{mainTitle}" name="text" value="Information:"/>
+      <mx:SetProperty target="{title}" name="visible" value="false"/>
+    </mx:State>
+  </mx:states>
+  <mx:Script>
+  	<![CDATA[
+  		// #de201f #f5e5e5 #de224d
+  		// #c8ecbf #e6fee0 #008000
+  		import org.onrails.rails.RailsErrors;
+  		
+  		[Bindable]
+  		public var errors:RailsErrors;
+  		
+  		[Bindable]
+  		public var errorMessage:String;
+  	]]>
+  </mx:Script>
+    <mx:Label width="100%" text="{errors.length} {errorMessage}"  color="#de224d" fontWeight="bold" id="mainTitle"/>
+    <mx:Label width="100%" text="There were problems with the following fields:"  fontWeight="bold" id="title"/>
+	<mx:Text width="100%" height="100%" text="{errors.text}"  />
+</mx:VBox>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" xmlns="*"
+				xmlns:test="tests.utils.*"
+				creationComplete="onCreationComplete()" xmlns:flexui="flexunit.flexui.*">
+<mx:Script>
+	<![CDATA[			
+	import tests.AllTests;
+	import org.onrails.rails.ActiveResourceClient;
+	import org.onrails.rails.FixtureResource;
+	
+	private function onCreationComplete():void
+	{
+		//ActiveResourceClient.portNumber = ":3030";
+		testRunner.test = AllTests.suite();
+		testRunner.startTest();
+	}
+	
+		
+	]]>
+</mx:Script>
+<flexui:TestRunnerBase id="testRunner" width="100%" height="100%"  />
+</mx:Application>
