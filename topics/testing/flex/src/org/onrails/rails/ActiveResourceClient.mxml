@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EventDispatcher xmlns:mx="http://www.adobe.com/2006/mxml" xmlns="flash.events.*" 
+	 implements="mx.core.IMXMLObject"
+	>
+	<mx:Script>
+		<![CDATA[
+		import mx.controls.Alert;
+		import mx.rpc.events.FaultEvent;
+	 	import mx.rpc.AsyncToken;
+		
+		static public var portNumber:String=":3000";
+		static public var baseUrl:String="http://localhost";
+
+		private var resourceName:String;		
+	    private var document:Object;
+		private var _path:String;
+		private var singularResource:Boolean;
+
+		public function defineResource(resourceName:String, singularResource:Boolean=false):void {
+		 	this.resourceName = resourceName;
+		 	this.singularResource = singularResource;
+		 	this._path = baseUrl+portNumber+"/"+resourceName;
+		}
+		public function initialized(document:Object, id:String):void  {
+			this.document = document;
+		}
+		
+		public function get path(): String {
+			return _path;
+			
+		}
+		public function list():AsyncToken {
+			indexOperation.url = resourcePath();
+			return indexOperation.send();
+		}		
+
+		public function show(id:Number=-1):AsyncToken {
+			showOperation.url = resourcePath(id);
+			return showOperation.send();
+		}
+
+		public function create(data:Object):AsyncToken {
+			createOperation.url = resourcePath()
+			return createOperation.send(data);
+		}
+		
+		public function deleteItem(id:Number=-1):AsyncToken {
+			deleteOperation.url = resourcePath(id);
+			return deleteOperation.send();
+		}
+		
+		public function update(data:Object):AsyncToken {
+			updateOperation.url = resourcePath(data.id)+"?_method=put"; // Shouldn't have to a "put" but HttpService forces POST or GET
+			return updateOperation.send(data);
+		}
+		
+		protected function defaultFaultHandler(fault:FaultEvent):void {
+			//mx.controls.Alert.show(fault.toString());
+		}
+		
+		protected function resourcePath(id:Number=-1):String {
+		    return this.singularResource || id == -1 ? path+".xml" : path+"/"+id+".xml";
+		}
+		]]>
+	</mx:Script>
+	
+	<!-- Note: The url shown is only a sample, 
+	           url is rebuild for every call using baseUrl and resourceName -->
+	<mx:HTTPService id="indexOperation" 
+					url="http://localhost:3000/watches.xml" 
+				  	resultFormat="e4x"
+					useProxy="false"
+					 showBusyCursor="true"
+					  concurrency="multiple"
+				  />
+	<mx:HTTPService id="createOperation"
+		     		url="http://localhost:3000/watches.xml"
+			  		method="POST"
+					resultFormat="e4x"
+					contentType="application/xml" 
+			  		useProxy="false" 
+					 showBusyCursor="true"
+					  concurrency="multiple"
+			  		/>
+    
+	<mx:HTTPService id="showOperation"
+		     		url="http://localhost:3000/watches/1.xml"
+			  		method="GET"
+					resultFormat="e4x"
+			  		useProxy="false" 
+					 showBusyCursor="true"
+					  concurrency="multiple"
+			  		/>
+			  		
+	<mx:HTTPService id="deleteOperation"
+		     		url="http://localhost:3000/watches/1.xml"
+			  		method="POST"
+					resultFormat="e4x"
+			  		useProxy="false" 
+					 showBusyCursor="true"
+					  concurrency="multiple"
+			  		>
+		        <mx:request xmlns="">
+		        	<_method>delete</_method>
+		        </mx:request>		
+	</mx:HTTPService>
+
+	<mx:HTTPService id="updateOperation"
+		     		url="http://localhost:3000/watches/1.xml"
+			  		method="PUT"
+					resultFormat="e4x"
+			  		useProxy="false" 
+					contentType="application/xml"			  		
+					  concurrency="multiple"
+			  		/>
+			  		
+	<mx:HTTPService id="htmlGetOperation" 
+					url="http://localhost:3000/" 
+				  	resultFormat="text"
+					useProxy="false"
+					showBusyCursor="true"
+					concurrency="multiple"
+				  />
+			  		
+</EventDispatcher>
