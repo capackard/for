@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application 
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+ 	xmlns:flexui="flexunit.flexui.*"	
+	xmlns:local="*" 
+	layout="vertical"
+	applicationComplete="runTests()">
+<mx:Script>
+	<![CDATA[
+	    import flexunit.framework.TestSuite;
+		import tests.TestNotesResource;
+		private function runTests():void{
+			testRunner.test = new TestSuite(TestNotesResource);
+			testRunner.startTest();			
+		}
+	]]>
+</mx:Script>		
+	<local:NotesResource id="notesResource" />
+	<flexui:TestRunnerBase id="testRunner" width="100%" height="100%"  /> 	
+</mx:Application>
