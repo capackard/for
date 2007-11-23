@@ -1,0 +1,99 @@
+--- 
+categories_009: 
+  name: Phones
+  lft: "15"
+  id: "23"
+  description: 
+  rgt: "16"
+  parent_id: "21"
+categories_010: 
+  name: Prepaid Cards
+  lft: "17"
+  id: "24"
+  description: 
+  rgt: "18"
+  parent_id: "21"
+categories_011: 
+  name: Dvds
+  lft: "20"
+  id: "25"
+  description: 
+  rgt: "27"
+  parent_id: "15"
+categories_012: 
+  name: Blueray
+  lft: "21"
+  id: "26"
+  description: 
+  rgt: "22"
+  parent_id: "25"
+categories_main: 
+  name: Main Category
+  lft: "1"
+  id: "15"
+  description: 
+  rgt: "28"
+  parent_id: 
+categories_013: 
+  name: HD DVD
+  lft: "23"
+  id: "27"
+  description: 
+  rgt: "24"
+  parent_id: "25"
+categories_002: 
+  name: Cameras & Photo
+  lft: "2"
+  id: "16"
+  description: 
+  rgt: "11"
+  parent_id: "15"
+categories_014: 
+  name: DVD
+  lft: "25"
+  id: "28"
+  description: 
+  rgt: "26"
+  parent_id: "25"
+categories_bags: 
+  name: Bags
+  lft: "3"
+  id: "17"
+  description: 
+  rgt: "4"
+  parent_id: "16"
+categories_004: 
+  name: Accessories
+  lft: "5"
+  id: "18"
+  description: 
+  rgt: "6"
+  parent_id: "16"
+categories_005: 
+  name: Analog Cameras
+  lft: "7"
+  id: "19"
+  description: 
+  rgt: "8"
+  parent_id: "16"
+categories_006: 
+  name: Digital Cameras
+  lft: "9"
+  id: "20"
+  description: 
+  rgt: "10"
+  parent_id: "16"
+categories_007: 
+  name: Cell Phones
+  lft: "12"
+  id: "21"
+  description: 
+  rgt: "19"
+  parent_id: "15"
+categories_008: 
+  name: Accessories
+  lft: "13"
+  id: "22"
+  description: 
+  rgt: "14"
+  parent_id: "21"
