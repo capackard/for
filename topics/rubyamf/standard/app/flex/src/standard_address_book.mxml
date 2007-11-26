@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute">
-	
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" xmlns:view="flexonrails.examples.view.*">
+	<mx:HDividedBox left="0" top="0" right="0" bottom="0">
+		<view:ContactList id="contactList" left="0" top="0" bottom="0" />
+		<view:ContactView id="contactView" right="0" top="0" bottom="0" />
+	</mx:HDividedBox>
 </mx:Application>
