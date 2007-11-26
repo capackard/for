@@ -57,3 +57,4 @@ Rails::Initializer.run do |config|
   # Make Active Record use UTC-base instead of local time
   # config.active_record.default_timezone = :utc
 end
+Mime::Type.register "application/x-amf", :amf

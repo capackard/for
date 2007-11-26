@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" xmlns:view="flexonrails.examples.view.*">
-	<mx:HDividedBox left="0" top="0" right="0" bottom="0">
-		<view:ContactList id="contactList" left="0" top="0" bottom="0" />
-		<view:ContactView id="contactView" right="0" top="0" bottom="0" />
+<mx:Application
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:business="flexonrails.examples.business.*"
+	xmlns:control="flexonrails.examples.control.*"
+	xmlns:view="flexonrails.examples.view.*"
+	layout="absolute"
+	width="100%" height="100%"
+	backgroundColor="0xAAAAAA"
+	applicationComplete="init()"
+>
+
+	<mx:Script>
+	<![CDATA[
+	
+		import flexonrails.examples.events.LoadContactListEvent;
+		
+		private function init():void {
+			new LoadContactListEvent().dispatch();
+		}
+		
+	]]>
+	</mx:Script>
+
+	<business:Services id="service" />
+	<control:ContactListController id="controller" />
+	<business:ContactListObserver id="contactListObserver" />
+	
+	<mx:Label id="contactsHeader" text="Contacts" fontWeight="bold" fontSize="18" />
+	<mx:HDividedBox left="0" top="{contactsHeader.height}" right="0" bottom="0">
+		<view:ContactList id="contactList" height="100%" width="33%"/>
+		<view:ContactView id="contactView" height="100%"/>
 	</mx:HDividedBox>
 </mx:Application>
