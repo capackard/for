@@ -6,6 +6,7 @@ package flexonrails.examples.business {
 	import flexonrails.examples.vo.Contact;
 	
 	import mx.binding.utils.ChangeWatcher;
+	import mx.collections.ArrayCollection;
 	import mx.events.CollectionEvent;
 	import mx.events.CollectionEventKind;
 	import mx.events.PropertyChangeEvent;
@@ -19,6 +20,10 @@ package flexonrails.examples.business {
 		}
 		
 		private function contactListSet(pce:PropertyChangeEvent):void {
+			if (pce.oldValue) {
+				var oldAC:ArrayCollection = pce.oldValue as ArrayCollection
+				oldAC.removeEventListener(CollectionEvent.COLLECTION_CHANGE, contactListChanged);
+			}
 			if (model.contactList) {
 				model.contactList.addEventListener(CollectionEvent.COLLECTION_CHANGE, contactListChanged);
 			}

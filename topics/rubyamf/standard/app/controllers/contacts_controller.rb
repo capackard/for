@@ -1,15 +1,17 @@
 class ContactsController < ApplicationController
 
+  # return all Contacts
   def find_all
     render :amf => Contact.find(:all)
   end
   
+  # return a single Contact, by id
   # expect single argument: contact id
   def find_by_id
     render :amf => Contact.find(params[:id])
   end
 
-  # saves new and updates existing Contacts
+  # saves new or updates existing Contacts
   # expect params[0] to be incoming Contact
   def save
     @contact = params[0]
@@ -21,6 +23,7 @@ class ContactsController < ApplicationController
     end
   end
 
+  # destroy a Contact
   # expect single argument: product id
   def destroy
     @contact = Contact.find(params[:id])
