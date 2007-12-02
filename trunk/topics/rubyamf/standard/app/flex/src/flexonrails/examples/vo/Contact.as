@@ -1,7 +1,7 @@
 package flexonrails.examples.vo {
 	
-	[RemoteClass(alias="Contact")]
 	[Bindable]
+	[RemoteClass(alias="Contact")]
 	public class Contact {
 		
 		public var id:int;
@@ -9,10 +9,7 @@ package flexonrails.examples.vo {
 		public var lastName:String;
 		public var email:String;
 		public var homePhone:String;
-		public var workPhone:String;
-		
-		// transient
-		public var newContact:Boolean = true;
+		public var officePhone:String;
 		
 	}
 }

@@ -13,7 +13,6 @@ package flexonrails.examples.model {
 		private static var instance:ContactListModel;
 		
 		public var contactList:ArrayCollection;
-		
 		public var selectedContact:Contact;
 		
 		public function ContactListModel(init:Initializer) {

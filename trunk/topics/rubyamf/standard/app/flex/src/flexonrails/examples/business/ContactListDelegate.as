@@ -19,16 +19,19 @@ package flexonrails.examples.business {
 			contactListService = service.getRemoteObject('contactListService');
 		}
 		
+		// will call /rubyamf_gateway/find_all
 		public function getContactList():void {
 			var token:AsyncToken = contactListService.find_all();
 			token.addResponder(responder);
 		}
 		
+		// will call /rubyamf_gateway/save
 		public function save(contact:Contact):void {
 			var token:AsyncToken = contactListService.save(contact);
 			token.addResponder(responder);
 		}
 		
+		// will call /rubyamf_gateway/destroy
 		public function remove(contact:Contact):void {
 			var token:AsyncToken = contactListService.destroy(contact.id);
 			token.addResponder(responder);

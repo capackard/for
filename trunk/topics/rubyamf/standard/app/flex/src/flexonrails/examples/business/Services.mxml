@@ -4,6 +4,11 @@
 	xmlns:cairngorm="com.adobe.cairngorm.business.*"
 >
 
-	<mx:RemoteObject id="contactListService" destination="rubyamf" source="ContactsController" endpoint="http://localhost:3000/rubyamf_gateway" showBusyCursor="true" />
+	<mx:RemoteObject
+		id="contactListService"
+		destination="rubyamf"
+		source="ContactsController"
+		endpoint="http://localhost:3000/rubyamf_gateway"
+		showBusyCursor="true" />
 
 </cairngorm:ServiceLocator>
