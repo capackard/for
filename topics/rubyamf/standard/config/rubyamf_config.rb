@@ -17,7 +17,7 @@ module RubyAMF
     # The translations only occur on object properties
     # An incoming property like: myProperty gets turned into my_property
     # An outgoing property like my_property gets turned into myProperty
-    #ClassMappings.translate_case = false
+    ClassMappings.translate_case = true
   
     # => Force Active Record Ids
     # includes the id field for activerecord objects even if you don't specify it when using custom attributes. This is important for deserialization
@@ -39,7 +39,7 @@ module RubyAMF
     # Flex::    [RemoteClass(alias='User')]
     # RubyAMF will automagically convert it to a User active record without you having to create a class mapping.
     # This also works with non active record class mappings. See the wiki on the google code page for a downloadable example.
-    # ClassMappings.assume_types = false
+    ClassMappings.assume_types = true
     
     # => Class Mapping Definitions
     # A Class Mapping definition conists of at least these two properties:
