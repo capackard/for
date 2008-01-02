@@ -5,7 +5,6 @@ package flexonrails.examples.commands {
 	
 	import flexonrails.examples.business.ContactListDelegate;
 	import flexonrails.examples.model.ContactListModel;
-	import flexonrails.examples.vo.Contact;
 	
 	import mx.collections.ArrayCollection;
 	import mx.controls.Alert;
@@ -23,7 +22,7 @@ package flexonrails.examples.commands {
 		
 		public function result(data:Object):void {
 			var re:ResultEvent = data as ResultEvent;
-			model.contactList = re.result as ArrayCollection;
+			model.contactList = new ArrayCollection(re.result as Array);
 		}
 		
 		public function fault(info:Object):void {

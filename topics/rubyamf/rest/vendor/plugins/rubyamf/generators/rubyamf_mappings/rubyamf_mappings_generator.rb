@@ -3,6 +3,9 @@ require 'rbconfig'
 class RubyamfMappingsGenerator < Rails::Generator::Base
   
   MODEL_DIR = File.join(RAILS_ROOT, "app/models")
+  
+  def initialize(runtime_args, runtime_options = {})
+  end
 
   def manifest
     record do |m|

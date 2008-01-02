@@ -55,7 +55,7 @@ module RubyAMF
           rescue ActiveRecord::StatementInvalid => e
             # This error occurs during migrations, since the AR constructed above will check its columns, but the table won't exist yet.
             # We'll ignore the error if we're migrating.
-            raise unless ARGV[0] =~ /migrate$/
+            raise unless ARGV.include?("migrate") or ARGV.include?("db:migrate")
           end
         end
         
@@ -120,12 +120,17 @@ module RubyAMF
                       request_params[key] = rubyamf_params[key] #put it into rubyamf_params
                     end
                   else
-                    if first.is_a?(VoHash)
+                    if first.is_a?(RubyAMF::VoHelper::VoHash)
                       if (key = first.explicitType.split('::').last.to_snake!.downcase.to_sym)
                         rubyamf_params[key] = first
                         if always_add_to_params
                           request_params[key] = first
                         end
+                      end
+                    elsif first.is_a?(Hash) # a simple hash should become named params in params
+                      rubyamf_params.merge!(first)
+                      if always_add_to_params
+                        request_params.merge!(first)
                       end
                     end
                   end
