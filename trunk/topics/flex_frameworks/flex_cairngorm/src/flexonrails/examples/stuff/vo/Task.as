@@ -10,13 +10,12 @@ package flexonrails.examples.stuff.vo {
 		
 		// attributes
 		public var id:int;
-		public var title:String;
+		public var contextId:int;
+		public var label:String;
 		public var description:String;
+		public var completedOn:Date;
 		public var createdAt:Date;
 		public var updatedAt:Date;
-		
-		// associations
-		public var context:Context;
 		
 	}
 
