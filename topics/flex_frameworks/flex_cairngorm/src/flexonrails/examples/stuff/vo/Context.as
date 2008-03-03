@@ -4,18 +4,21 @@
 */
 package flexonrails.examples.stuff.vo {
 	
+	import mx.collections.ArrayCollection;
+	
 	[Bindable]
 	[RemoteClass(alias="Context")]
 	public class Context {
 		
 		// attributes
 		public var id:int;
-		public var name:String;
+		public var label:String;
 		public var createdAt:Date;
 		public var updatedAt:Date;
 		
 		// associations
-		public var tasks:Array;
+		[Transient]
+		public var tasks:ArrayCollection;
 		
 	}
 
