@@ -12,15 +12,15 @@
 ActiveRecord::Schema.define(:version => 2) do
 
   create_table "contexts", :force => true do |t|
-    t.string   "name"
+    t.string   "label"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "tasks", :force => true do |t|
-    t.string   "title"
-    t.text     "description"
+    t.string   "label"
     t.integer  "context_id"
+    t.datetime "completed_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

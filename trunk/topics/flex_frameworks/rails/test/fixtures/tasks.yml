@@ -1,9 +1,13 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  title: MyString
-  description: MyText
+  label: Take out the trash
+  context_id: 2
+
+one:
+  label: Take dog to vet
+  context_id: 2
 
 two:
-  title: MyString
-  description: MyText
+  label: Fill out timesheet
+  context_id: 1
