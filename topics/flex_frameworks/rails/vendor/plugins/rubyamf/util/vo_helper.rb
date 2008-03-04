@@ -37,6 +37,14 @@ module RubyAMF
             attributes.delete("id") if attributes["id"]==0 # id attribute cannot be zero
             ruby_obj.instance_variable_set("@attributes", attributes) # bypasses any overwriting of the attributes=(value) method  (also allows 'id' to be set)
             ruby_obj.instance_variable_set("@new_record", false) if attributes["id"] # the record already exists in the database
+            #superstition
+            if (ruby_obj.new_record?)
+              ruby_obj.created_at = nil if ruby_obj.respond_to? "created_at"
+              ruby_obj.created_on = nil if ruby_obj.respond_to? "created_on"
+              ruby_obj.updated_at = nil if ruby_obj.respond_to? "updated_at"
+              ruby_obj.updated_on = nil if ruby_obj.respond_to? "updated_on"
+            end
+
             obj.each_key do |field|
               if reflection = ruby_obj.class.reflections[field.to_sym] # is it an association
                 value = obj.delete(field) # get rid of the field so it doesnt get added in the next loop
@@ -87,7 +95,7 @@ module RubyAMF
                 instance_vars << ("@"+assoc) if obj.send(assoc) # this will make sure they are instantiated and only load it if they have a value.
               end
             elsif ClassMappings.check_for_associations
-              instance_vars = obj.instance_variables.reject{|assoc| ["@attributes","@new_record","@read_only"].include?(assoc)}
+              instance_vars = obj.instance_variables.reject{|assoc| ["@attributes","@new_record","@read_only","@attributes_cache"].include?(assoc)}
             end
             
             # if there are AR methods they want in the AS object as an attribute, see about them here.
@@ -109,7 +117,7 @@ module RubyAMF
             end
             instance_vars = []
             if ClassMappings.check_for_associations
-              instance_vars = obj.instance_variables.reject{|assoc| ["@attributes","@new_record","@read_only"].include?(assoc)}
+              instance_vars = obj.instance_variables.reject{|assoc| ["@attributes","@new_record","@read_only","@attributes_cache"].include?(assoc)}
             end
           end
         end
@@ -119,8 +127,9 @@ module RubyAMF
           new_object[attr_name] = obj.instance_variable_get(var)
         end
         methods.each do |method|
-          method.to_camel! if ClassMappings.translate_case
-          new_object[method] = obj.send(method)
+          attr_name = method.dup
+          attr_name.to_camel! if ClassMappings.translate_case
+          new_object[attr_name] = obj.send(method)
         end
         new_object
       rescue Exception => e

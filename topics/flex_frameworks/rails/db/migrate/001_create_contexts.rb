@@ -1,7 +1,7 @@
 class CreateContexts < ActiveRecord::Migration
   def self.up
     create_table :contexts do |t|
-      t.string :name
+      t.string :label
 
       t.timestamps
     end

@@ -17,7 +17,7 @@ module RubyAMF
     # The translations only occur on object properties
     # An incoming property like: myProperty gets turned into my_property
     # An outgoing property like my_property gets turned into myProperty
-    #ClassMappings.translate_case = false
+    ClassMappings.translate_case = true
   
     # => Force Active Record Ids
     # includes the id field for activerecord objects even if you don't specify it when using custom attributes. This is important for deserialization
@@ -82,6 +82,18 @@ module RubyAMF
     # it will not have a scope to use and will not add any attributes or associations (whichever it cant match) to that association.
     # ClassMappings.default_mapping_scope = :viewing
   
+    ClassMappings.register(
+      :actionscript  => 'Context',
+      :ruby          => 'Context',
+      :type          => 'active_record',
+      :attributes    => ["id", "label", "created_at", "updated_at"])
+
+    ClassMappings.register(
+      :actionscript  => 'Task',
+      :ruby          => 'Task',
+      :type          => 'active_record',
+      :attributes    => ["id", "label", "context_id", "created_at", "updated_at"])
+
     # => Date Conversion
     # Incoming dates from Flash by default are Time objects, this can conver to DateTime if needed
     # ClassMappings.use_ruby_date_time = false
@@ -108,7 +120,7 @@ module RubyAMF
      
     # => Return Top Level Hash
     # For those scaffolding users out there, who want the top-level object to come as a hash so scaffolding works out of the box.
-    # ParameterMappings.scaffolding = false
+    ParameterMappings.scaffolding = true
   
     # => Incoming Remoting Parameter Mappings
     # Incoming Remoting Parameter mappings allow you to map an incoming requests parameters into rails' params hash
