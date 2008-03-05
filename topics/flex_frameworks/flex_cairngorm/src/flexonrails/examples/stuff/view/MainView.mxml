@@ -8,6 +8,8 @@
 		[Bindable]
 		private var model:StuffModelLocator = StuffModelLocator.getInstance();
 		
+		
+		
 	]]>
 	</mx:Script>
 
@@ -23,6 +25,6 @@
 		<mx:Spacer width="100%" />
 		<mx:Button id="addTaskButton" label="+ Add Task" visible="{model.selectedContext != null}" includeInLayout="{model.selectedContext != null}" />
 	</mx:HBox>
-	<mx:List id="tasksList" width="100%" height="100%" dataProvider="{model.selectedContext.tasks}" />
+	<mx:List id="tasksList" width="100%" height="100%" dataProvider="{model.selectedContext.tasks}" itemRenderer="flexonrails.examples.stuff.view.renderers.TaskItemRenderer" />
 	
 </mx:VBox>

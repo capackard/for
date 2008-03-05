@@ -16,7 +16,9 @@ package flexonrails.examples.stuff.vo {
 		public var createdAt:Date;
 		public var updatedAt:Date;
 		
-		// associations
+		[Transient]
+		public var tasksLoaded:Boolean;
+		
 		[Transient]
 		public var tasks:ArrayCollection;
 		
