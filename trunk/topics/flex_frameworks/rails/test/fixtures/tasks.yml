@@ -1,13 +1,13 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
+take_out_trash:
   label: Take out the trash
   context_id: 2
 
-one:
+dog_to_vet:
   label: Take dog to vet
   context_id: 2
 
-two:
+fill_time_sheet:
   label: Fill out timesheet
   context_id: 1

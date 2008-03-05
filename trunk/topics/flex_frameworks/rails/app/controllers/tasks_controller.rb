@@ -3,7 +3,7 @@ class TasksController < ApplicationController
   before_filter :find_context
   
   def load_all
-    @tasks = @context.find :all
+    @tasks = @context.tasks
     
     respond_to do |format|
       format.amf { render :amf => @tasks }
