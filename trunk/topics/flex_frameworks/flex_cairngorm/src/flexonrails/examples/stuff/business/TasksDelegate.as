@@ -25,12 +25,12 @@ package flexonrails.examples.stuff.business {
 		}
 
 		public function save(task:Task, context:Context):void {
-			var call:AsyncToken = service.load_all({task:task, context_id:context.id});
+			var call:AsyncToken = service.save({task:task, context_id:context.id});
 			call.addResponder(responder);
 		}
 
 		public function destroy(task:Task, context:Context):void {
-			var call:AsyncToken = service.load_all({id:task.id, context_id:context.id});
+			var call:AsyncToken = service.destroy({id:task.id, context_id:context.id});
 			call.addResponder(responder);
 		}
 

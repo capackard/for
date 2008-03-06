@@ -92,7 +92,7 @@ module RubyAMF
       :actionscript  => 'Task',
       :ruby          => 'Task',
       :type          => 'active_record',
-      :attributes    => ["id", "label", "context_id", "created_at", "updated_at"])
+      :attributes    => ["id", "label", "context_id", "completed_at", "created_at", "updated_at"])
 
     # => Date Conversion
     # Incoming dates from Flash by default are Time objects, this can conver to DateTime if needed

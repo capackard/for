@@ -3,12 +3,15 @@
 
 	<mx:Script>
 	<![CDATA[
+		import flexonrails.examples.stuff.events.CreateTaskEvent;
 		import flexonrails.examples.stuff.model.StuffModelLocator;
 		
 		[Bindable]
 		private var model:StuffModelLocator = StuffModelLocator.getInstance();
 		
-		
+		private function addTask():void {
+			new CreateTaskEvent(model.selectedContext).dispatch();
+		}
 		
 	]]>
 	</mx:Script>
@@ -23,7 +26,7 @@
 			includeInLayout="{model.selectedContext != null}"
 		/>
 		<mx:Spacer width="100%" />
-		<mx:Button id="addTaskButton" label="+ Add Task" visible="{model.selectedContext != null}" includeInLayout="{model.selectedContext != null}" />
+		<mx:Button id="addTaskButton" label="+ Add Task" visible="{model.selectedContext != null}" includeInLayout="{model.selectedContext != null}" click="addTask()" />
 	</mx:HBox>
 	<mx:List id="tasksList" width="100%" height="100%" dataProvider="{model.selectedContext.tasks}" itemRenderer="flexonrails.examples.stuff.view.renderers.TaskItemRenderer" />
 	
