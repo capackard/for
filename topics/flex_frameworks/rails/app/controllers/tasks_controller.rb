@@ -23,7 +23,7 @@ class TasksController < ApplicationController
   end
   
   def destroy
-    @task = @context.find params[:id]
+    @task = @context.tasks.find params[:id]
     @task.destroy
     
     respond_to do |format|
