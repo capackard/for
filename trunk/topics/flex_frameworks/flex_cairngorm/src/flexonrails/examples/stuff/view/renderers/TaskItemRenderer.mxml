@@ -3,10 +3,11 @@
 	<mx:Script>
 	<![CDATA[
 		import flexonrails.examples.stuff.events.DeleteTaskEvent;
-		import mx.managers.FocusManager;
 		import flexonrails.examples.stuff.model.StuffModelLocator;
 		import flexonrails.examples.stuff.events.SaveTaskEvent;
 		import flexonrails.examples.stuff.vo.Task;
+		
+		import mx.managers.FocusManager;
 		
 		[Bindable]
 		private var model:StuffModelLocator = StuffModelLocator.getInstance();
@@ -38,6 +39,10 @@
 				if (task.label != taskLabelEditText.text) {
 					task.label = taskLabelEditText.text;
 					saveTask();
+					// since set data will be called again
+					// we need this hack to keep from thinking that the object is new
+					// after save it will have it's id set correctly
+					task.id = -1; 
 				}
 			} else {
 				taskLabelEditText.setFocus();

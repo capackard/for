@@ -6,6 +6,7 @@ package flexonrails.examples.stuff.commands {
 	import flexonrails.examples.stuff.business.TasksDelegate;
 	import flexonrails.examples.stuff.events.SaveTaskEvent;
 	import flexonrails.examples.stuff.model.StuffModelLocator;
+	import flexonrails.examples.stuff.vo.Task;
 	
 	import mx.rpc.IResponder;
 	import mx.rpc.events.FaultEvent;
@@ -14,15 +15,19 @@ package flexonrails.examples.stuff.commands {
 	public class SaveTaskCommand implements ICommand, IResponder {
 		
 		private var model:StuffModelLocator = StuffModelLocator.getInstance();
+		private var task:Task;
 		
 		public function execute(event:CairngormEvent):void {
 			var evt:SaveTaskEvent = event as SaveTaskEvent;
 			var delegate:TasksDelegate = new TasksDelegate(this);
-			delegate.save(evt.task, evt.context);
+			task = evt.task;
+			delegate.save(task, evt.context);
 		}
 		
 		public function result(data:Object):void {
 			var result:ResultEvent = data as ResultEvent;
+			var returnedTask:Task = result.result as Task;
+			task.id = returnedTask.id; // in case the task was new
 		}
 		
 		public function fault(info:Object):void {
