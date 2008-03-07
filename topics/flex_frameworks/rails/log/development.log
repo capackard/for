@@ -2229,3 +2229,648 @@ Processing TasksController#save (for 127.0.0.1 at 2008-03-05 20:43:12) [POST]
 Completed in 0.01195 (83 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/save]
 Sending data 
 Completed in 0.08505 (11 reqs/sec) | Rendering: 0.00004 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhosttasks/save]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-05 21:00:27) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+Sending data 
+Completed in 0.00344 (290 reqs/sec) | Rendering: 0.00005 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/rubyamf_gateway/]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-05 21:00:27) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing ContextsController#load_all (for 127.0.0.1 at 2008-03-05 21:00:27) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"load_all", "controller"=>"contexts"}
+  [4;36;1mContext Load (0.000825)[0m   [0;1mSELECT * FROM contexts [0m
+Completed in 0.01103 (90 reqs/sec) | DB: 0.00000 (0%) |  [http://localhostcontexts/load_all]
+Sending data 
+Completed in 0.02106 (47 reqs/sec) | Rendering: 0.00005 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhostcontexts/load_all]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-05 21:00:29) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+Sending data 
+Completed in 0.00292 (342 reqs/sec) | Rendering: 0.00004 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/rubyamf_gateway/]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-05 21:00:29) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#load_all (for 127.0.0.1 at 2008-03-05 21:00:29) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1}, "action"=>"load_all", "controller"=>"tasks"}
+  [4;35;1mContext Load (0.000513)[0m   [0mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+Completed in 0.01152 (86 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/load_all]
+  [4;36;1mTask Load (0.000754)[0m   [0;1mSELECT * FROM tasks WHERE (tasks.context_id = 1) [0m
+Sending data 
+Completed in 0.02316 (43 reqs/sec) | Rendering: 0.00005 (0%) | DB: 0.00075 (3%) | 200 OK [http://localhosttasks/load_all]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-05 21:00:33) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2008-03-05 21:00:33) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1, "id"=>1018837953.0}, "action"=>"destroy", "id"=>1018837953.0, "controller"=>"tasks"}
+  [4;35;1mContext Load (0.000277)[0m   [0mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+  [4;36;1mTask Load (0.000439)[0m   [0;1mSELECT * FROM tasks WHERE (tasks."id" = 1018837953.0 AND (tasks.context_id = 1)) [0m
+  [4;35;1mTask Destroy (0.000797)[0m   [0m DELETE FROM tasks
+ WHERE "id" = 1018837953
+[0m
+Completed in 0.02392 (41 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/destroy]
+Sending data 
+Completed in 0.03153 (31 reqs/sec) | Rendering: 0.00004 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhosttasks/destroy]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:05:40) [POST]
+  Session ID: BAh7BzoMdXNlcl9pZGkKIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpG%0AbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--080b9c33d33106bce622727458795c41f3255090
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:05:47) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+Sending data 
+Completed in 0.00328 (305 reqs/sec) | Rendering: 0.00005 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/rubyamf_gateway/]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:05:47) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing ContextsController#load_all (for 127.0.0.1 at 2008-03-06 22:05:47) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"load_all", "controller"=>"contexts"}
+  [4;36;1mContext Load (0.000832)[0m   [0;1mSELECT * FROM contexts [0m
+Completed in 0.01349 (74 reqs/sec) | DB: 0.00000 (0%) |  [http://localhostcontexts/load_all]
+Sending data 
+Completed in 0.05032 (19 reqs/sec) | Rendering: 0.00004 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhostcontexts/load_all]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:05:49) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+Sending data 
+Completed in 0.00296 (337 reqs/sec) | Rendering: 0.00004 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/rubyamf_gateway/]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:05:49) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#load_all (for 127.0.0.1 at 2008-03-06 22:05:49) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1}, "action"=>"load_all", "controller"=>"tasks"}
+  [4;35;1mContext Load (0.000528)[0m   [0mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+Completed in 0.05588 (17 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/load_all]
+  [4;36;1mTask Load (0.027186)[0m   [0;1mSELECT * FROM tasks WHERE (tasks.context_id = 1) [0m
+Sending data 
+Completed in 0.10974 (9 reqs/sec) | Rendering: 0.00006 (0%) | DB: 0.02719 (24%) | 200 OK [http://localhosttasks/load_all]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:07:00) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#save (for 127.0.0.1 at 2008-03-06 22:07:00) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1, "task"=>#<Task id: nil, label: "Stuff", context_id: 1, completed_at: nil, created_at: nil, updated_at: nil>}, "action"=>"save", "task"=>#<Task id: nil, label: "Stuff", context_id: 1, completed_at: nil, created_at: nil, updated_at: nil>, "controller"=>"tasks"}
+  [4;35;1mContext Load (0.000274)[0m   [0mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+  [4;36;1mTask Create (0.000927)[0m   [0;1mINSERT INTO tasks ("completed_at", "context_id", "updated_at", "label", "created_at") VALUES(NULL, 1, '2008-03-06 22:07:00', 'Stuff', '2008-03-06 22:07:00')[0m
+Completed in 0.01214 (82 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/save]
+Sending data 
+Completed in 0.02466 (40 reqs/sec) | Rendering: 0.00007 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhosttasks/save]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:07:58) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#save (for 127.0.0.1 at 2008-03-06 22:07:58) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1, "task"=>#<Task id: nil, label: "hork", context_id: 1, completed_at: nil, created_at: nil, updated_at: nil>}, "action"=>"save", "task"=>#<Task id: nil, label: "hork", context_id: 1, completed_at: nil, created_at: nil, updated_at: nil>, "controller"=>"tasks"}
+  [4;35;1mContext Load (0.000271)[0m   [0mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+  [4;36;1mTask Create (0.000466)[0m   [0;1mINSERT INTO tasks ("completed_at", "context_id", "updated_at", "label", "created_at") VALUES(NULL, 1, '2008-03-06 22:07:58', 'hork', '2008-03-06 22:07:58')[0m
+Completed in 0.01224 (81 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/save]
+Sending data 
+Completed in 0.02459 (40 reqs/sec) | Rendering: 0.00006 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhosttasks/save]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:08:53) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#save (for 127.0.0.1 at 2008-03-06 22:08:53) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1, "task"=>#<Task id: 1018837952, label: "horek", context_id: 1, completed_at: nil>}, "action"=>"save", "task"=>#<Task id: 1018837952, label: "horek", context_id: 1, completed_at: nil>, "controller"=>"tasks"}
+  [4;35;1mContext Load (0.000278)[0m   [0mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+  [4;36;1mTask Update (0.000559)[0m   [0;1mUPDATE tasks SET "completed_at" = NULL, "label" = 'horek', "updated_at" = '2008-03-06 22:08:53', "context_id" = 1 WHERE "id" = 1018837952[0m
+Completed in 0.01316 (75 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/save]
+Sending data 
+Completed in 0.02506 (39 reqs/sec) | Rendering: 0.00005 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhosttasks/save]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:09:06) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#save (for 127.0.0.1 at 2008-03-06 22:09:06) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1, "task"=>#<Task id: nil, label: "jamblies", context_id: 1, completed_at: nil, created_at: nil, updated_at: nil>}, "action"=>"save", "task"=>#<Task id: nil, label: "jamblies", context_id: 1, completed_at: nil, created_at: nil, updated_at: nil>, "controller"=>"tasks"}
+  [4;35;1mContext Load (0.000304)[0m   [0mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+  [4;36;1mTask Create (0.000466)[0m   [0;1mINSERT INTO tasks ("completed_at", "context_id", "updated_at", "label", "created_at") VALUES(NULL, 1, '2008-03-06 22:09:06', 'jamblies', '2008-03-06 22:09:06')[0m
+Completed in 0.01278 (78 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/save]
+Sending data 
+Completed in 0.07261 (13 reqs/sec) | Rendering: 0.00006 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhosttasks/save]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:11:27) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#save (for 127.0.0.1 at 2008-03-06 22:11:27) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1, "task"=>#<Task id: 1018837952, label: "horekd", context_id: 1, completed_at: nil>}, "action"=>"save", "task"=>#<Task id: 1018837952, label: "horekd", context_id: 1, completed_at: nil>, "controller"=>"tasks"}
+  [4;35;1mContext Load (0.000278)[0m   [0mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+  [4;36;1mTask Update (0.000390)[0m   [0;1mUPDATE tasks SET "completed_at" = NULL, "label" = 'horekd', "updated_at" = '2008-03-06 22:11:27', "context_id" = 1 WHERE "id" = 1018837952[0m
+Completed in 0.01119 (89 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/save]
+Sending data 
+Completed in 0.02282 (43 reqs/sec) | Rendering: 0.00004 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhosttasks/save]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:24:31) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+Sending data 
+Completed in 0.00321 (311 reqs/sec) | Rendering: 0.00005 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/rubyamf_gateway/]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:24:31) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing ContextsController#load_all (for 127.0.0.1 at 2008-03-06 22:24:31) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"load_all", "controller"=>"contexts"}
+  [4;35;1mContext Load (0.000643)[0m   [0mSELECT * FROM contexts [0m
+Completed in 0.00637 (156 reqs/sec) | DB: 0.00000 (0%) |  [http://localhostcontexts/load_all]
+Sending data 
+Completed in 0.01450 (68 reqs/sec) | Rendering: 0.00005 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhostcontexts/load_all]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:24:35) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+Sending data 
+Completed in 0.00284 (351 reqs/sec) | Rendering: 0.00004 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/rubyamf_gateway/]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:24:35) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#load_all (for 127.0.0.1 at 2008-03-06 22:24:35) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1}, "action"=>"load_all", "controller"=>"tasks"}
+  [4;36;1mContext Load (0.000266)[0m   [0;1mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+Completed in 0.01020 (98 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/load_all]
+  [4;35;1mTask Load (0.000623)[0m   [0mSELECT * FROM tasks WHERE (tasks.context_id = 1) [0m
+Sending data 
+Completed in 0.06772 (14 reqs/sec) | Rendering: 0.00004 (0%) | DB: 0.00062 (0%) | 200 OK [http://localhosttasks/load_all]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:33:38) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+Sending data 
+Completed in 0.00339 (294 reqs/sec) | Rendering: 0.00005 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/rubyamf_gateway/]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:33:38) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing ContextsController#load_all (for 127.0.0.1 at 2008-03-06 22:33:38) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"load_all", "controller"=>"contexts"}
+  [4;36;1mContext Load (0.000634)[0m   [0;1mSELECT * FROM contexts [0m
+Completed in 0.00674 (148 reqs/sec) | DB: 0.00000 (0%) |  [http://localhostcontexts/load_all]
+Sending data 
+Completed in 0.01505 (66 reqs/sec) | Rendering: 0.00004 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhostcontexts/load_all]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:33:40) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+Sending data 
+Completed in 0.00282 (354 reqs/sec) | Rendering: 0.00004 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/rubyamf_gateway/]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:33:40) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#load_all (for 127.0.0.1 at 2008-03-06 22:33:40) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1}, "action"=>"load_all", "controller"=>"tasks"}
+  [4;35;1mContext Load (0.000248)[0m   [0mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+Completed in 0.01011 (98 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/load_all]
+  [4;36;1mTask Load (0.000362)[0m   [0;1mSELECT * FROM tasks WHERE (tasks.context_id = 1) [0m
+Sending data 
+Completed in 0.01923 (52 reqs/sec) | Rendering: 0.00004 (0%) | DB: 0.00036 (1%) | 200 OK [http://localhosttasks/load_all]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:33:50) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#save (for 127.0.0.1 at 2008-03-06 22:33:50) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1, "task"=>#<Task id: nil, label: "stuff", context_id: 1, completed_at: nil, created_at: nil, updated_at: nil>}, "action"=>"save", "task"=>#<Task id: nil, label: "stuff", context_id: 1, completed_at: nil, created_at: nil, updated_at: nil>, "controller"=>"tasks"}
+  [4;35;1mContext Load (0.000305)[0m   [0mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+  [4;36;1mTask Create (0.000452)[0m   [0;1mINSERT INTO tasks ("completed_at", "context_id", "updated_at", "label", "created_at") VALUES(NULL, 1, '2008-03-06 22:33:50', 'stuff', '2008-03-06 22:33:50')[0m
+Completed in 0.01179 (84 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/save]
+Sending data 
+Completed in 0.02467 (40 reqs/sec) | Rendering: 0.00005 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhosttasks/save]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:34:13) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#save (for 127.0.0.1 at 2008-03-06 22:34:13) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1, "task"=>#<Task id: nil, label: "shizzle", context_id: 1, completed_at: nil, created_at: nil, updated_at: nil>}, "action"=>"save", "task"=>#<Task id: nil, label: "shizzle", context_id: 1, completed_at: nil, created_at: nil, updated_at: nil>, "controller"=>"tasks"}
+  [4;35;1mContext Load (0.000275)[0m   [0mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+  [4;36;1mTask Create (0.000414)[0m   [0;1mINSERT INTO tasks ("completed_at", "context_id", "updated_at", "label", "created_at") VALUES(NULL, 1, '2008-03-06 22:34:13', 'shizzle', '2008-03-06 22:34:13')[0m
+Completed in 0.01187 (84 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/save]
+Sending data 
+Completed in 0.02402 (41 reqs/sec) | Rendering: 0.00005 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhosttasks/save]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:34:27) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#save (for 127.0.0.1 at 2008-03-06 22:34:27) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1, "task"=>#<Task id: 1018837959, label: "stuff stuffington", context_id: 1, completed_at: nil>}, "action"=>"save", "task"=>#<Task id: 1018837959, label: "stuff stuffington", context_id: 1, completed_at: nil>, "controller"=>"tasks"}
+  [4;35;1mContext Load (0.000274)[0m   [0mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+  [4;36;1mTask Update (0.000383)[0m   [0;1mUPDATE tasks SET "completed_at" = NULL, "label" = 'stuff stuffington', "updated_at" = '2008-03-06 22:34:27', "context_id" = 1 WHERE "id" = 1018837959[0m
+Completed in 0.01362 (73 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/save]
+Sending data 
+Completed in 0.02522 (39 reqs/sec) | Rendering: 0.00006 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhosttasks/save]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:34:52) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#save (for 127.0.0.1 at 2008-03-06 22:34:52) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1, "task"=>#<Task id: 1018837960, label: "shizzleinator", context_id: 1, completed_at: nil>}, "action"=>"save", "task"=>#<Task id: 1018837960, label: "shizzleinator", context_id: 1, completed_at: nil>, "controller"=>"tasks"}
+  [4;35;1mContext Load (0.000271)[0m   [0mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+  [4;36;1mTask Update (0.000379)[0m   [0;1mUPDATE tasks SET "completed_at" = NULL, "label" = 'shizzleinator', "updated_at" = '2008-03-06 22:34:52', "context_id" = 1 WHERE "id" = 1018837960[0m
+Completed in 0.01240 (80 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/save]
+Sending data 
+Completed in 0.02416 (41 reqs/sec) | Rendering: 0.00005 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhosttasks/save]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:35:07) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#load_all (for 127.0.0.1 at 2008-03-06 22:35:07) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>2, 0=>{"context_id"=>2}, "action"=>"load_all", "controller"=>"tasks"}
+  [4;35;1mContext Load (0.000256)[0m   [0mSELECT * FROM contexts WHERE (contexts."id" = 2) [0m
+Completed in 0.01002 (99 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/load_all]
+  [4;36;1mTask Load (0.000444)[0m   [0;1mSELECT * FROM tasks WHERE (tasks.context_id = 2) [0m
+Sending data 
+Completed in 0.02046 (48 reqs/sec) | Rendering: 0.00005 (0%) | DB: 0.00044 (2%) | 200 OK [http://localhosttasks/load_all]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:36:21) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+Sending data 
+Completed in 0.00281 (356 reqs/sec) | Rendering: 0.00004 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/rubyamf_gateway/]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:36:21) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing ContextsController#load_all (for 127.0.0.1 at 2008-03-06 22:36:21) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"load_all", "controller"=>"contexts"}
+  [4;35;1mContext Load (0.000668)[0m   [0mSELECT * FROM contexts [0m
+Completed in 0.00663 (150 reqs/sec) | DB: 0.00000 (0%) |  [http://localhostcontexts/load_all]
+Sending data 
+Completed in 0.01476 (67 reqs/sec) | Rendering: 0.00004 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhostcontexts/load_all]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:36:22) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+Sending data 
+Completed in 0.00286 (349 reqs/sec) | Rendering: 0.00005 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/rubyamf_gateway/]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:36:22) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#load_all (for 127.0.0.1 at 2008-03-06 22:36:22) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1}, "action"=>"load_all", "controller"=>"tasks"}
+  [4;36;1mContext Load (0.000246)[0m   [0;1mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+Completed in 0.01020 (98 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/load_all]
+  [4;35;1mTask Load (0.000608)[0m   [0mSELECT * FROM tasks WHERE (tasks.context_id = 1) [0m
+Sending data 
+Completed in 0.02098 (47 reqs/sec) | Rendering: 0.00004 (0%) | DB: 0.00061 (2%) | 200 OK [http://localhosttasks/load_all]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:36:24) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#load_all (for 127.0.0.1 at 2008-03-06 22:36:24) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>2, 0=>{"context_id"=>2}, "action"=>"load_all", "controller"=>"tasks"}
+  [4;36;1mContext Load (0.000266)[0m   [0;1mSELECT * FROM contexts WHERE (contexts."id" = 2) [0m
+Completed in 0.01012 (98 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/load_all]
+  [4;35;1mTask Load (0.000464)[0m   [0mSELECT * FROM tasks WHERE (tasks.context_id = 2) [0m
+Sending data 
+Completed in 0.02096 (47 reqs/sec) | Rendering: 0.00004 (0%) | DB: 0.00046 (2%) | 200 OK [http://localhosttasks/load_all]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:39:22) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+Sending data 
+Completed in 0.00491 (203 reqs/sec) | Rendering: 0.00004 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/rubyamf_gateway/]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:39:22) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing ContextsController#load_all (for 127.0.0.1 at 2008-03-06 22:39:22) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"load_all", "controller"=>"contexts"}
+  [4;36;1mContext Load (0.000613)[0m   [0;1mSELECT * FROM contexts [0m
+Completed in 0.00651 (153 reqs/sec) | DB: 0.00000 (0%) |  [http://localhostcontexts/load_all]
+Sending data 
+Completed in 0.01520 (65 reqs/sec) | Rendering: 0.00004 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhostcontexts/load_all]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:39:28) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+Sending data 
+Completed in 0.00285 (350 reqs/sec) | Rendering: 0.00004 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/rubyamf_gateway/]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:39:28) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing ContextsController#load_all (for 127.0.0.1 at 2008-03-06 22:39:28) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"load_all", "controller"=>"contexts"}
+  [4;35;1mContext Load (0.000614)[0m   [0mSELECT * FROM contexts [0m
+Completed in 0.00666 (150 reqs/sec) | DB: 0.00000 (0%) |  [http://localhostcontexts/load_all]
+Sending data 
+Completed in 0.01515 (66 reqs/sec) | Rendering: 0.00004 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhostcontexts/load_all]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:39:34) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+Sending data 
+Completed in 0.00284 (351 reqs/sec) | Rendering: 0.00004 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/rubyamf_gateway/]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:39:34) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#load_all (for 127.0.0.1 at 2008-03-06 22:39:34) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1}, "action"=>"load_all", "controller"=>"tasks"}
+  [4;36;1mContext Load (0.000260)[0m   [0;1mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+Completed in 0.01008 (99 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/load_all]
+  [4;35;1mTask Load (0.000531)[0m   [0mSELECT * FROM tasks WHERE (tasks.context_id = 1) [0m
+Sending data 
+Completed in 0.02010 (49 reqs/sec) | Rendering: 0.00004 (0%) | DB: 0.00053 (2%) | 200 OK [http://localhosttasks/load_all]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:39:58) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#save (for 127.0.0.1 at 2008-03-06 22:39:59) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1, "task"=>#<Task id: 1018837952, label: "shiggityy", context_id: 1, completed_at: nil>}, "action"=>"save", "task"=>#<Task id: 1018837952, label: "shiggityy", context_id: 1, completed_at: nil>, "controller"=>"tasks"}
+  [4;36;1mContext Load (0.000286)[0m   [0;1mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+  [4;35;1mTask Update (0.000410)[0m   [0mUPDATE tasks SET "completed_at" = NULL, "label" = 'shiggityy', "updated_at" = '2008-03-06 22:39:59', "context_id" = 1 WHERE "id" = 1018837952[0m
+Completed in 0.01297 (77 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/save]
+Sending data 
+Completed in 0.02557 (39 reqs/sec) | Rendering: 0.00006 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhosttasks/save]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:40:22) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#save (for 127.0.0.1 at 2008-03-06 22:40:22) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1, "task"=>#<Task id: nil, label: "Haggis", context_id: 1, completed_at: nil, created_at: nil, updated_at: nil>}, "action"=>"save", "task"=>#<Task id: nil, label: "Haggis", context_id: 1, completed_at: nil, created_at: nil, updated_at: nil>, "controller"=>"tasks"}
+  [4;36;1mContext Load (0.000284)[0m   [0;1mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+  [4;35;1mTask Create (0.000431)[0m   [0mINSERT INTO tasks ("completed_at", "context_id", "updated_at", "label", "created_at") VALUES(NULL, 1, '2008-03-06 22:40:22', 'Haggis', '2008-03-06 22:40:22')[0m
+Completed in 0.01184 (84 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/save]
+Sending data 
+Completed in 0.02478 (40 reqs/sec) | Rendering: 0.00006 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhosttasks/save]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:55:09) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+Sending data 
+Completed in 0.00289 (345 reqs/sec) | Rendering: 0.00004 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/rubyamf_gateway/]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:55:09) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing ContextsController#load_all (for 127.0.0.1 at 2008-03-06 22:55:09) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"load_all", "controller"=>"contexts"}
+  [4;36;1mContext Load (0.000736)[0m   [0;1mSELECT * FROM contexts [0m
+Completed in 0.00687 (145 reqs/sec) | DB: 0.00000 (0%) |  [http://localhostcontexts/load_all]
+Sending data 
+Completed in 0.01521 (65 reqs/sec) | Rendering: 0.00004 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhostcontexts/load_all]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:55:10) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+Sending data 
+Completed in 0.00280 (356 reqs/sec) | Rendering: 0.00004 (1%) | DB: 0.00000 (0%) | 200 OK [http://localhost/rubyamf_gateway/]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:55:10) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#load_all (for 127.0.0.1 at 2008-03-06 22:55:10) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1}, "action"=>"load_all", "controller"=>"tasks"}
+  [4;35;1mContext Load (0.000250)[0m   [0mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+Completed in 0.00982 (101 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/load_all]
+  [4;36;1mTask Load (0.000750)[0m   [0;1mSELECT * FROM tasks WHERE (tasks.context_id = 1) [0m
+Sending data 
+Completed in 0.02104 (47 reqs/sec) | Rendering: 0.00004 (0%) | DB: 0.00075 (3%) | 200 OK [http://localhosttasks/load_all]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:55:27) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#save (for 127.0.0.1 at 2008-03-06 22:55:27) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1, "task"=>#<Task id: nil, label: "Shatster", context_id: 1, completed_at: nil, created_at: nil, updated_at: nil>}, "action"=>"save", "task"=>#<Task id: nil, label: "Shatster", context_id: 1, completed_at: nil, created_at: nil, updated_at: nil>, "controller"=>"tasks"}
+  [4;35;1mContext Load (0.000297)[0m   [0mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+  [4;36;1mTask Create (0.000439)[0m   [0;1mINSERT INTO tasks ("completed_at", "context_id", "updated_at", "label", "created_at") VALUES(NULL, 1, '2008-03-06 22:55:27', 'Shatster', '2008-03-06 22:55:27')[0m
+Completed in 0.01389 (71 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/save]
+Sending data 
+Completed in 0.02638 (37 reqs/sec) | Rendering: 0.00004 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhosttasks/save]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:55:30) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2008-03-06 22:55:30) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1, "id"=>1018837962.0}, "action"=>"destroy", "id"=>1018837962.0, "controller"=>"tasks"}
+  [4;35;1mContext Load (0.000274)[0m   [0mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+  [4;36;1mTask Load (0.000398)[0m   [0;1mSELECT * FROM tasks WHERE (tasks."id" = 1018837962.0 AND (tasks.context_id = 1)) [0m
+  [4;35;1mTask Destroy (0.000386)[0m   [0m DELETE FROM tasks
+ WHERE "id" = 1018837962
+[0m
+Completed in 0.01704 (58 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/destroy]
+Sending data 
+Completed in 0.02428 (41 reqs/sec) | Rendering: 0.00006 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhosttasks/destroy]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:55:31) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2008-03-06 22:55:31) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1, "id"=>1018837961.0}, "action"=>"destroy", "id"=>1018837961.0, "controller"=>"tasks"}
+  [4;36;1mContext Load (0.000255)[0m   [0;1mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+  [4;35;1mTask Load (0.000318)[0m   [0mSELECT * FROM tasks WHERE (tasks."id" = 1018837961.0 AND (tasks.context_id = 1)) [0m
+  [4;36;1mTask Destroy (0.000317)[0m   [0;1m DELETE FROM tasks
+ WHERE "id" = 1018837961
+[0m
+Completed in 0.01601 (62 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/destroy]
+Sending data 
+Completed in 0.02315 (43 reqs/sec) | Rendering: 0.00006 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhosttasks/destroy]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:55:32) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2008-03-06 22:55:32) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1, "id"=>1018837960.0}, "action"=>"destroy", "id"=>1018837960.0, "controller"=>"tasks"}
+  [4;35;1mContext Load (0.000276)[0m   [0mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+  [4;36;1mTask Load (0.002080)[0m   [0;1mSELECT * FROM tasks WHERE (tasks."id" = 1018837960.0 AND (tasks.context_id = 1)) [0m
+  [4;35;1mTask Destroy (0.000385)[0m   [0m DELETE FROM tasks
+ WHERE "id" = 1018837960
+[0m
+Completed in 0.01716 (58 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/destroy]
+Sending data 
+Completed in 0.02435 (41 reqs/sec) | Rendering: 0.00004 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhosttasks/destroy]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:55:32) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2008-03-06 22:55:32) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1, "id"=>1018837959.0}, "action"=>"destroy", "id"=>1018837959.0, "controller"=>"tasks"}
+  [4;36;1mContext Load (0.000249)[0m   [0;1mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+  [4;35;1mTask Load (0.000310)[0m   [0mSELECT * FROM tasks WHERE (tasks."id" = 1018837959.0 AND (tasks.context_id = 1)) [0m
+  [4;36;1mTask Destroy (0.000386)[0m   [0;1m DELETE FROM tasks
+ WHERE "id" = 1018837959
+[0m
+Completed in 0.01673 (59 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/destroy]
+Sending data 
+Completed in 0.02436 (41 reqs/sec) | Rendering: 0.00006 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhosttasks/destroy]
+
+
+Processing RubyamfController#gateway (for 127.0.0.1 at 2008-03-06 22:55:33) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"action"=>"gateway", "controller"=>"rubyamf"}
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2008-03-06 22:55:33) [POST]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--64283786789f40b8fbc86d665ed70dae4895f221
+  Parameters: {"context_id"=>1, 0=>{"context_id"=>1, "id"=>1018837952.0}, "action"=>"destroy", "id"=>1018837952.0, "controller"=>"tasks"}
+  [4;35;1mContext Load (0.000251)[0m   [0mSELECT * FROM contexts WHERE (contexts."id" = 1) [0m
+  [4;36;1mTask Load (0.000344)[0m   [0;1mSELECT * FROM tasks WHERE (tasks."id" = 1018837952.0 AND (tasks.context_id = 1)) [0m
+  [4;35;1mTask Destroy (0.000343)[0m   [0m DELETE FROM tasks
+ WHERE "id" = 1018837952
+[0m
+Completed in 0.01745 (57 reqs/sec) | DB: 0.00000 (0%) |  [http://localhosttasks/destroy]
+Sending data 
+Completed in 0.02468 (40 reqs/sec) | Rendering: 0.00006 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhosttasks/destroy]
