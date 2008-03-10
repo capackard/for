@@ -6,8 +6,7 @@
 		import flexonrails.examples.stuff.events.CreateTaskEvent;
 		import flexonrails.examples.stuff.model.StuffModelLocator;
 		
-		[Bindable]
-		private var model:StuffModelLocator = StuffModelLocator.getInstance();
+		[Bindable] private var model:StuffModelLocator = StuffModelLocator.getInstance();
 		
 		private function addTask():void {
 			new CreateTaskEvent(model.selectedContext).dispatch();
