@@ -2,13 +2,9 @@
 <mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml" height="60">
 	<mx:Script>
 	<![CDATA[
-		import flexonrails.examples.stuff.events.DeleteTaskEvent;
-		import flexonrails.examples.stuff.model.StuffModelLocator;
-		import flexonrails.examples.stuff.events.SaveTaskEvent;
-		import flexonrails.examples.stuff.vo.Task;
+		import flexonrails.examples.stuff.model.vo.Task;
 		
-		[Bindable] private var model:StuffModelLocator = StuffModelLocator.getInstance();
-		[Bindable] private var task:Task;
+		[Bindable] public var task:Task;
 		[Bindable] private var editing:Boolean;
 		
 		override public function set data(value:Object):void {
@@ -26,7 +22,7 @@
 					saveTask();
 					// since set data will be called again
 					// we need this hack to keep from thinking that the object is new
-					// after save it will have it's id set correctly
+					// after save it will have its id set correctly
 					task.id = -1; 
 				}
 			} else {
@@ -45,11 +41,11 @@
 		}
 		
 		public function deleteTask():void {
-			new DeleteTaskEvent(task, model.selectedContext).dispatch();
+			//new DeleteTaskEvent(task, model.selectedContext).dispatch();
 		}
 		
 		public function saveTask():void {
-			new SaveTaskEvent(task, model.selectedContext).dispatch();
+			//new SaveTaskEvent(task, model.selectedContext).dispatch();
 		}
 		
 	]]>
