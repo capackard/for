@@ -2,9 +2,9 @@ package flexonrails.examples.stuff {
 
 	import flexonrails.examples.stuff.controller.*;
 	
-	import org.puremvc.patterns.facade.Facade;
+	import org.puremvc.as3.patterns.facade.Facade;
 	
-	public class ApplicationFacade extends Facade  {
+	public class ApplicationFacade extends Facade {
 		
 		// Notification name constants
 		public static const STARTUP:String 			= "startup";

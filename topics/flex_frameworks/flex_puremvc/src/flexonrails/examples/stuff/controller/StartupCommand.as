@@ -5,8 +5,8 @@ package flexonrails.examples.stuff.controller {
 	import flexonrails.examples.stuff.view.ContextListMediator;
 	import flexonrails.examples.stuff.view.MainViewMediator;
 	
-	import org.puremvc.interfaces.INotification;
-	import org.puremvc.patterns.command.SimpleCommand;
+	import org.puremvc.as3.interfaces.INotification;
+	import org.puremvc.as3.patterns.command.SimpleCommand;
 	
 	public class StartupCommand extends SimpleCommand {
 		

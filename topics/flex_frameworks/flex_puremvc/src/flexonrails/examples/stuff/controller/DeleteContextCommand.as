@@ -8,8 +8,8 @@ package flexonrails.examples.stuff.controller {
 	import mx.rpc.events.FaultEvent;
 	import mx.rpc.events.ResultEvent;
 	
-	import org.puremvc.interfaces.INotification;
-	import org.puremvc.patterns.command.SimpleCommand;
+	import org.puremvc.as3.interfaces.INotification;
+	import org.puremvc.as3.patterns.command.SimpleCommand;
 
 	public class DeleteContextCommand extends SimpleCommand implements IResponder {
 		

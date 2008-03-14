@@ -7,8 +7,8 @@ package flexonrails.examples.stuff.view {
 	import flexonrails.examples.stuff.model.vo.Context;
 	import flexonrails.examples.stuff.view.components.ContextList;
 	
-	import org.puremvc.interfaces.INotification;
-	import org.puremvc.patterns.mediator.Mediator;
+	import org.puremvc.as3.interfaces.INotification;
+	import org.puremvc.as3.patterns.mediator.Mediator;
 
 	public class ContextListMediator extends Mediator {
 		
@@ -16,8 +16,8 @@ package flexonrails.examples.stuff.view {
 
 		public static const NAME:String = 'ContextListMediator';
 
-		public function ContextListMediator( viewComponent:Object ) {
-			super(viewComponent);
+		public function ContextListMediator(viewComponent:Object) {
+			super(NAME, viewComponent);
 			
 			contextList.addEventListener(ContextList.NEW, newContext);
 			contextList.addEventListener(ContextList.DELETE, deleteSelectedContext);
@@ -27,10 +27,6 @@ package flexonrails.examples.stuff.view {
 			contextList.contexts = contextProxy.contexts;
 		}
 		
-		override public function getMediatorName():String {
-			return NAME;
-		}
-
 		private function get contextList():ContextList {
 			return viewComponent as ContextList;
 		}
