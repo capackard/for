@@ -5,7 +5,7 @@ package flexonrails.examples.stuff.model {
 	
 	import mx.collections.ArrayCollection;
 	
-	import org.puremvc.patterns.proxy.Proxy;
+	import org.puremvc.as3.patterns.proxy.Proxy;
 
 	public class ContextProxy extends Proxy {
 		

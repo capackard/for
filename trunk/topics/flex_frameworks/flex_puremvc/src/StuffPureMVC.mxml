@@ -12,7 +12,7 @@
 
 	<mx:Script>
 	<![CDATA[
-		import org.puremvc.patterns.observer.Notification;
+		import org.puremvc.as3.patterns.observer.Notification;
 		import flexonrails.examples.stuff.ApplicationFacade;
 		
 		public var facade:ApplicationFacade = ApplicationFacade.getInstance();

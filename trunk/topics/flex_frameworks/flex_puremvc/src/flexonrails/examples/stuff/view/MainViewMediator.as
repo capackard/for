@@ -4,23 +4,19 @@ package flexonrails.examples.stuff.view {
 	import flexonrails.examples.stuff.model.vo.Context;
 	import flexonrails.examples.stuff.view.components.MainView;
 	
-	import org.puremvc.interfaces.INotification;
-	import org.puremvc.patterns.mediator.Mediator;
+	import org.puremvc.as3.interfaces.INotification;
+	import org.puremvc.as3.patterns.mediator.Mediator;
 
 	public class MainViewMediator extends Mediator {
 		
 		public static const NAME:String = 'MainViewMediator';
 
 		public function MainViewMediator(viewComponent:Object) {
-			super(viewComponent);
+			super(NAME, viewComponent);
 			
 //			contextProxy = facade.retrieveProxy(ContextProxy.NAME) as ContextProxy;
 		}
 		
-		override public function getMediatorName():String {
-			return NAME;
-		}
-
 		private function get mainView():MainView {
 			return viewComponent as MainView;
 		}
