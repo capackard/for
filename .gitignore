@@ -1,4 +1,4 @@
 *.log
 *.sqlite3
 bin-debug
-
+.DS_Store
