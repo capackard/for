@@ -16,7 +16,7 @@ package flexonrails.examples.stuff.control {
 			addCommand(CreateTaskEvent.CreateTask_Event, CreateTaskCommand);
 			addCommand(SelectContextEvent.SelectContext_Event, SelectContextCommand);
 			addCommand(LoadAllContextsEvent.LoadAllContexts_Event, LoadAllContextsCommand);
-			addCommand(LoadAllTasksEvent.LoadAllTasks_Event, LoadAllTasksCommand);
+			addCommand(LoadAllTasksEvent.LoadAllTasks_Event, LoadTasksCommand);
 			addCommand(SaveContextEvent.SaveContext_Event, SaveContextCommand);
 			addCommand(DeleteContextEvent.DeleteContext_Event, DeleteContextCommand);
 			addCommand(SaveTaskEvent.SaveTask_Event, SaveTaskCommand);

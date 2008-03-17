@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml" height="60">
 
-	<mx:Metadata>
-		[Event('save')]
-	</mx:Metadata>
-
 	<mx:Script>
 	<![CDATA[
 		import flexonrails.examples.stuff.model.vo.Task;
 		
+		public static const DELETE_TASK:String = 'DELETE_TASK';
+		
 		[Bindable] public var task:Task;
-		[Bindable] private var editing:Boolean;
+		[Bindable] public var editing:Boolean;
 		
 		override public function set data(value:Object):void {
 			super.data = value;
 			task = data as Task;
-			if (task && task.id == 0) {
+			if (task && task.newTask) {
 				editing = true;
 			}
 		}
@@ -24,11 +22,6 @@
 			if (editing) {
 				if (task.label != taskLabelEditText.text) {
 					task.label = taskLabelEditText.text;
-					saveTask();
-					// since set data will be called again
-					// we need this hack to keep from thinking that the object is new
-					// after save it will have its id set correctly
-					task.id = -1; 
 				}
 			} else {
 				taskLabelEditText.setFocus();
@@ -38,21 +31,16 @@
 		
 		public function toggleCompleteTask():void {
 			if (completeCheckbox.selected) {
+				// in the "real world" we'd probably not use local dates
+				// but this works for an example.
 				task.completedAt = new Date();
 			} else {
 				task.completedAt = null;
 			}
-			saveTask();
 		}
 		
 		public function deleteTask():void {
-			//new DeleteTaskEvent(task, model.selectedContext).dispatch();
-		}
-		
-		public function saveTask():void {
-			//new SaveTaskEvent(task, model.selectedContext).dispatch();
-			var e:Event = new Event('save', true);
-			dispatchEvent(e);
+			dispatchEvent(new Event(DELETE_TASK, true));
 		}
 		
 	]]>

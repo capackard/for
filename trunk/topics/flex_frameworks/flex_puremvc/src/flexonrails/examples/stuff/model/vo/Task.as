@@ -16,6 +16,9 @@ package flexonrails.examples.stuff.model.vo {
 		public var createdAt:Date;
 		public var updatedAt:Date;
 		
+		[Transient]
+		public var newTask:Boolean;
+		
 	}
 
 }

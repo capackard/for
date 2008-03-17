@@ -27,7 +27,12 @@ package flexonrails.examples.stuff.commands {
 		public function result(data:Object):void {
 			var result:ResultEvent = data as ResultEvent;
 			var returnedTask:Task = result.result as Task;
-			task.id = returnedTask.id; // in case the task was new
+			if (task.newTask) {
+				task.id = returnedTask.id; // in case the task was new
+				task.createdAt = returnedTask.createdAt;
+				task.newTask = false;
+			}
+			task.updatedAt = returnedTask.updatedAt;
 		}
 		
 		public function fault(info:Object):void {

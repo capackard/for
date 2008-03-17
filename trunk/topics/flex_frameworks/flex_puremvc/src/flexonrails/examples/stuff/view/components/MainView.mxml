@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml">
 
+	<mx:Metadata>
+		[Event("addTask")]
+	</mx:Metadata>
+
 	<mx:Script>
 	<![CDATA[
 		import flexonrails.examples.stuff.model.vo.Context;
 		
+		public static const ADD_TASK:String = 'addTask';
+		
 		[Bindable]
 		public var selectedContext:Context;
-		
-		private function addTask():void {
-		}
-		
-		private function saveTask():void {
-			
-		}
 		
 	]]>
 	</mx:Script>
@@ -28,7 +27,7 @@
 			includeInLayout="{selectedContext != null}"
 		/>
 		<mx:Spacer width="100%" />
-		<mx:Button id="addTaskButton" label="+ Add Task" visible="{selectedContext != null}" includeInLayout="{selectedContext != null}" click="addTask()" />
+		<mx:Button id="addTaskButton" label="+ Add Task" visible="{selectedContext != null}" includeInLayout="{selectedContext != null}" click="dispatchEvent(new Event(ADD_TASK))" />
 	</mx:HBox>
 	<mx:List
 		id="tasksList"
