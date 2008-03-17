@@ -14,7 +14,7 @@
 		override public function set data(value:Object):void {
 			super.data = value;
 			task = data as Task;
-			if (task && task.id == 0) {
+			if (task && task.newTask) {
 				editing = true;
 			}
 		}
@@ -24,10 +24,6 @@
 				if (task.label != taskLabelEditText.text) {
 					task.label = taskLabelEditText.text;
 					saveTask();
-					// since set data will be called again
-					// we need this hack to keep from thinking that the object is new
-					// after save it will have it's id set correctly
-					task.id = -1; 
 				}
 			} else {
 				taskLabelEditText.setFocus();

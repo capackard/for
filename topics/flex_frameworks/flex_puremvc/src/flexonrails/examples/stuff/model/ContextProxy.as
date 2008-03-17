@@ -1,5 +1,7 @@
 package flexonrails.examples.stuff.model {
 	
+	import flash.utils.Dictionary;
+	
 	import flexonrails.examples.stuff.ApplicationFacade;
 	import flexonrails.examples.stuff.model.vo.Context;
 	
@@ -11,8 +13,11 @@ package flexonrails.examples.stuff.model {
 		
 		public static const NAME:String = 'ContextProxy';
 		
+		private var contextIdMap:Dictionary;
+		
 		public function ContextProxy() {
 			super(NAME, new ArrayCollection());
+			contextIdMap = new Dictionary(true);
 		}
 
 		// return data property cast to proper type
@@ -23,11 +28,17 @@ package flexonrails.examples.stuff.model {
 		public function reload(newContexts:Array):void {
 			contexts.disableAutoUpdate();
 			contexts.removeAll();
+			contextIdMap = new Dictionary(true);
 			for each (var context:Context in newContexts) {
 				contexts.addItem(context);
+				contextIdMap[context.id] = context;
 			}
 			contexts.enableAutoUpdate();
 			sendNotification(ApplicationFacade.CONTEXTS_LOADED);
+		}
+		
+		public function findById(id:Number):Context {
+			return contextIdMap[id];
 		}
 		
 		public function addItem(item:Object):void {

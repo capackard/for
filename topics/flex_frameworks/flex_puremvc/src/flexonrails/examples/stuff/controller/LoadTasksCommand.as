@@ -1,33 +1,32 @@
-package flexonrails.examples.stuff.commands {
+package flexonrails.examples.stuff.controller {
 	
-	import com.adobe.cairngorm.commands.ICommand;
-	import com.adobe.cairngorm.control.CairngormEvent;
-	
+	import flexonrails.examples.stuff.ApplicationFacade;
 	import flexonrails.examples.stuff.business.TasksDelegate;
-	import flexonrails.examples.stuff.events.LoadAllTasksEvent;
-	import flexonrails.examples.stuff.model.StuffModelLocator;
-	import flexonrails.examples.stuff.vo.Context;
+	import flexonrails.examples.stuff.model.vo.Context;
 	
 	import mx.collections.ArrayCollection;
 	import mx.rpc.IResponder;
 	import mx.rpc.events.FaultEvent;
 	import mx.rpc.events.ResultEvent;
+	
+	import org.puremvc.as3.interfaces.INotification;
+	import org.puremvc.as3.patterns.command.SimpleCommand;
 
-	public class LoadAllTasksCommand implements ICommand, IResponder {
+	public class LoadTasksCommand extends SimpleCommand implements IResponder {
 		
-		private var model:StuffModelLocator = StuffModelLocator.getInstance();
 		private var context:Context;
 		
-		public function execute(event:CairngormEvent):void {
-			var evt:LoadAllTasksEvent = event as LoadAllTasksEvent;
+		override public function execute(notification:INotification):void {
 			var delegate:TasksDelegate = new TasksDelegate(this);
-			context = evt.context;
+			context = notification.getBody() as Context;
 			delegate.loadAll(context);
 		}
 		
 		public function result(data:Object):void {
 			var result:ResultEvent = data as ResultEvent;
 			context.tasks = new ArrayCollection(result.result as Array);
+			context.tasksLoaded = true;
+			sendNotification(ApplicationFacade.TASKS_LOADED, context.tasks);
 		}
 		
 		public function fault(info:Object):void {
