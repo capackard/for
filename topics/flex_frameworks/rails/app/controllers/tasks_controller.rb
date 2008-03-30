@@ -16,7 +16,7 @@ class TasksController < ApplicationController
         if params[:task].save
           render :amf => params[:task]
         else
-          render :amf => params[:task].errors.join("\n")
+          render :amf => FaultObject.new(params[:task].errors.join("\n"))
         end
       end
     end

@@ -14,7 +14,7 @@ class ContextsController < ApplicationController
         if params[:context].save
           render :amf => params[:context]
         else
-          render :amf => params[:context].errors.join("\n")
+          render :amf => FaultObject.new(params[:context].errors.join("\n"))
         end
       end
     end
