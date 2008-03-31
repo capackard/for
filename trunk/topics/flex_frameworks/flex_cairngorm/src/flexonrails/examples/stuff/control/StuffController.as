@@ -13,14 +13,14 @@ package flexonrails.examples.stuff.control {
 		
 		private function initialize():void {
 			// add commands here
-			addCommand(CreateTaskEvent.CreateTask_Event, CreateTaskCommand);
-			addCommand(SelectContextEvent.SelectContext_Event, SelectContextCommand);
-			addCommand(LoadAllContextsEvent.LoadAllContexts_Event, LoadAllContextsCommand);
-			addCommand(LoadAllTasksEvent.LoadAllTasks_Event, LoadTasksCommand);
-			addCommand(SaveContextEvent.SaveContext_Event, SaveContextCommand);
-			addCommand(DeleteContextEvent.DeleteContext_Event, DeleteContextCommand);
-			addCommand(SaveTaskEvent.SaveTask_Event, SaveTaskCommand);
-			addCommand(DeleteTaskEvent.DeleteTask_Event, DeleteTaskCommand);
+			addCommand(CreateTaskEvent.CreateTask_Event,			CreateTaskCommand);
+			addCommand(SelectContextEvent.SelectContext_Event,		SelectContextCommand);
+			addCommand(LoadAllContextsEvent.LoadAllContexts_Event,	LoadAllContextsCommand);
+			addCommand(LoadAllTasksEvent.LoadAllTasks_Event,		LoadTasksCommand);
+			addCommand(SaveContextEvent.SaveContext_Event,			SaveContextCommand);
+			addCommand(DeleteContextEvent.DeleteContext_Event,		DeleteContextCommand);
+			addCommand(SaveTaskEvent.SaveTask_Event,				SaveTaskCommand);
+			addCommand(DeleteTaskEvent.DeleteTask_Event,			DeleteTaskCommand);
 		}
 	}
 }

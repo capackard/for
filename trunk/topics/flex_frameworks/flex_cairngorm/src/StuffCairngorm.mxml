@@ -23,8 +23,8 @@
 	]]>
 	</mx:Script>
 
-	<control:StuffController id="controller" />
 	<business:Services id="services" />
+	<control:StuffController id="controller" />
 	
 	<view:ContextList id="contextList" width="120" height="100%" backgroundColor="0xFFFFFF" />
 	<view:MainView id="mainView" width="100%" height="100%" backgroundColor="0xFFFFFF" />
