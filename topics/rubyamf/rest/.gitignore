@@ -1,7 +1,0 @@
-*.log
-bin
-config/database.yml
-tmp/cache/*
-tmp/sessions/*
-tmp/pids/*
-tmp/sockets/*
