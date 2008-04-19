@@ -60,7 +60,7 @@ package flexonrails.examples.stuff.view {
 				case ApplicationFacade.CONTEXTS_LOADED:
 					if (contextProxy.contexts.length > 0) {
 						contextList.contextList.selectedIndex = 0;
-						sendNotification(ApplicationFacade.CONTEXT_SELECTED, contextList.selectedContext);
+						contextSelected(null);
 					}
 				break;
 					

@@ -12,16 +12,14 @@ package flexonrails.examples.stuff.controller {
 
 	public class LoadAllContextsCommand extends SimpleCommand implements IResponder {
 		
-		private var contextProxy:ContextProxy;
-		
 		override public function execute(notification:INotification):void {
-			contextProxy = facade.retrieveProxy(ContextProxy.NAME) as ContextProxy;
 			var delegate:ContextsDelegate = new ContextsDelegate(this);
 			delegate.loadAll();
 		}
 		
 		public function result(data:Object):void {
 			var result:ResultEvent = data as ResultEvent;
+			var contextProxy:ContextProxy = facade.retrieveProxy(ContextProxy.NAME) as ContextProxy;
 			contextProxy.reload(result.result as Array);
 		}
 		
