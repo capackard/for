@@ -1,5 +1,5 @@
 #copied from rails tag rel_2-0-0_RC1 scaffold generator
-class RubyamfRestScaffoldGenerator < Rails::Generator::NamedBase
+class RubyamfScaffoldGenerator < Rails::Generator::NamedBase
   default_options :skip_timestamps => false, :skip_migration => false
 
   attr_reader   :controller_name,
@@ -39,21 +39,7 @@ class RubyamfRestScaffoldGenerator < Rails::Generator::NamedBase
       m.directory(File.join('app/models', class_path))
       m.directory(File.join('app/controllers', controller_class_path))
       m.directory(File.join('app/helpers', controller_class_path))
-      m.directory(File.join('app/views', controller_class_path, controller_file_name))
-      m.directory(File.join('app/views/layouts', controller_class_path))
-      m.directory(File.join('test/functional', controller_class_path))
       m.directory(File.join('test/unit', class_path))
-
-      for action in scaffold_views
-        m.template(
-          "view_#{action}.html.erb",
-          File.join('app/views', controller_class_path, controller_file_name, "#{action}.html.erb")
-        )
-      end
-
-      # Layout and stylesheet.
-      m.template('layout.html.erb', File.join('app/views/layouts', controller_class_path, "#{controller_file_name}.html.erb"))
-      m.template('style.css', 'public/stylesheets/scaffold.css')
 
       m.dependency 'model', [singular_name] + @args, :collision => :skip
 
@@ -61,10 +47,8 @@ class RubyamfRestScaffoldGenerator < Rails::Generator::NamedBase
         'controller.rb', File.join('app/controllers', controller_class_path, "#{controller_file_name}_controller.rb")
       )
 
-      m.template('functional_test.rb', File.join('test/functional', controller_class_path, "#{controller_file_name}_controller_test.rb"))
-      m.template('helper.rb',          File.join('app/helpers',     controller_class_path, "#{controller_file_name}_helper.rb"))
+      m.template('helper.rb',File.join('app/helpers',     controller_class_path, "#{controller_file_name}_helper.rb"))
 
-      m.route_resources controller_file_name
     end
   end
 
@@ -81,10 +65,6 @@ class RubyamfRestScaffoldGenerator < Rails::Generator::NamedBase
              "Don't add timestamps to the migration file for this model") { |v| options[:skip_timestamps] = v }
       opt.on("--skip-migration",
              "Don't generate a migration file for this model") { |v| options[:skip_migration] = v }
-    end
-
-    def scaffold_views
-      %w[ index show new edit ]
     end
 
     def model_name

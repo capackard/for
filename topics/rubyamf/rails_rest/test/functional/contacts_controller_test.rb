@@ -1,7 +1,6 @@
 require File.dirname(__FILE__) + '/../test_helper'
 
 class ContactsControllerTest < ActionController::TestCase
-  tests ContactsController
 
   def test_should_get_index
     get :index
