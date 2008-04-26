@@ -30,7 +30,7 @@
 		
 		// Service Methods
 		private function init():void {
-			contactListService.index();
+			contactListService.find_all();
 		}
 		
 		// called by contactListService when a call to 'index' returns
@@ -74,7 +74,7 @@
 				
 				case REMOVE :
 					if (!contacts.selectedItem) return;
-					contactListService.destroy({id:selectedContact.id});
+					contactListService.destroy(selectedContact.id);
 				break;
 			}
 		}
@@ -95,7 +95,7 @@
 		endpoint="http://localhost:3000/rubyamf_gateway"
 		fault="serviceFault(event)"
 		showBusyCursor="true">
-		<mx:method name="index" result="contactsLoaded(event)" />
+		<mx:method name="find_all" result="contactsLoaded(event)" />
 		<mx:method name="destroy" result="contactDestroyed(event)" />
 	</mx:RemoteObject>
 	

@@ -29,7 +29,7 @@
 			selectedContact.email = emailText.text;
 			selectedContact.homePhone = homePhoneText.text;
 			selectedContact.officePhone = officePhoneText.text;
-			contactListService.save({contact:selectedContact})
+			contactListService.save(selectedContact)
 		}
 		
 		// called by contactListService when a call to 'save' returns
