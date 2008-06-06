@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" backgroundColor="#000000">
+	<mx:Script>
+		<![CDATA[
+			import model.BlogModel;
+		]]>
+	</mx:Script>
+
+	<mx:Canvas
+		cornerRadius="20" borderStyle="solid" borderColor="#000000" backgroundColor="#FFFFFF"
+		width="300" height="220"
+	>
+		<mx:Text id="previewText" text="{BlogModel.getInstance().entryRawText}" />
+	</mx:Canvas>
+	
+	<mx:Canvas
+		backgroundColor="#FFFFFF"
+		bottom="0" left="0" right="0" height="500"
+	>
+		<mx:TextArea id="previewHTMLText" text="{BlogModel.getInstance().entryHTMLText}" enabled="false" wordWrap="true" top="20" left="20" right="20" bottom="20" />
+	</mx:Canvas>
+</mx:Canvas>
