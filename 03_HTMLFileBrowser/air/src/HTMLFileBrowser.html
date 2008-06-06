@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>HTMLFileBrowser</title>
+
+  <script type="text/javascript" src="AIRAliases.js"></script>
+  <script type="text/javascript" src="prototype.js"></script>    
+  <script type="text/javascript" src="filebrowser_controller.js"></script>
+  <style>
+     .folder {
+        border: 1px solid red;
+     }
+     .file {
+       border: 1px solid blue;
+     }
+  </style>
+</head>
+
+<body>
+
+<h1>File Browser</h1>
+<input type="Button" value="Desktop"    onclick="controller.selectRootFolder(air.File.desktopDirectory)" />
+<input type="Button" value="Documents"  onclick="controller.selectRootFolder(air.File.documentsDirectory)" />
+<input type="Button" value="User"       onclick="controller.selectRootFolder(air.File.userDirectory)" />
+<br/>
+<input type="text" id="path" style="width:100%"></input>  
+<br />
+<table>
+  <tr>
+    <td><div id="list"></div></td>
+    <td><div id="details"></div><input type="Button" value="Open" onclick="controller.openSelectedFile()"></td>
+  </tr>
+</table>    
+<script>
+  var controller = new FileBrowserController();
+</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+**/bin-debug/*
+.DS_Store
+twitter.yml
+**/config/amazon_s3.yml
+**/log/*.log
+**/tmp/**/*
+.actionScriptProperties
+.flexProperties
+.project
