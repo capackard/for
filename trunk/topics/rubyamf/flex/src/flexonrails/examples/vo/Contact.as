@@ -13,7 +13,7 @@ package flexonrails.examples.vo {
 		public var createdAt:Date;
 		public var updateAt:Date;
 		
-		// transient
+		[Transient]
 		public var newContact:Boolean = true;
 		
 	}
