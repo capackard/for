@@ -9,12 +9,16 @@
 		private var blogModel:BlogModel = BlogModel.getInstance();
 		
 		private function init():void {
-			BindingUtils.bindProperty(blogModel, "entryRawText", editor, "text");
-			BindingUtils.bindProperty(blogModel, "entryHTMLText", editor, "htmlText");
+			// Another possible way of binding using AS instead of MXML b
+//			BindingUtils.bindProperty(blogModel, "entryRawText", editor, "text");
+//			BindingUtils.bindProperty(blogModel, "entryHTMLText", editor, "htmlText");
 		}
 		
 	]]>
 	</mx:Script>
+	
+	<mx:Binding source="editor.text" destination="blogModel.entryRawText" />
+	<mx:Binding source="editor.htmlText" destination="blogModel.entryHTMLText" />
 
 	<mx:RichTextEditor id="editor" width="100%" height="100%" />
 </mx:Canvas>
