@@ -1,4 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute">
+<mx:Application
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:business="com.flexonrails.pranaSequences.business.*"
+	xmlns:control="com.flexonrails.pranaSequences.control.*"
+	layout="absolute"
+xmlns:view="com.flexonrails.pranaSequences.view.*">
+	
+	<mx:Script>
+	<![CDATA[
+		import com.flexonrails.pranaSequences.model.ModelLocator;
+		
+		[Bindable]
+		private var model:ModelLocator = ModelLocator.getInstance();
+		
+	]]>
+	</mx:Script>
+	
+	<business:Services id="services" />
+	<control:PranaSequencesController id="controller" />
+	
+	<mx:ViewStack id="mainViewStack" width="100%" height="100%" selectedIndex="{model.appState}">
+		<view:LoginPanel id="loginPanel" />
+		<view:MainView id="mainView" />
+	</mx:ViewStack>
 	
 </mx:Application>
