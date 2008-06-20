@@ -1,27 +1,27 @@
 class NotesController < ApplicationController
   
+  before_filter :login_required
+  
   # return all Notes
   def find_all
     respond_to do |format|
-      format.amf  { render :amf => Note.find(:all) }
+      format.amf  { render :amf => self.current_user.notes.all }
     end
   end
   
   # return a single Note by id
-  # expects id in params[0]
   def find_by_id
     respond_to do |format|
-      format.amf { render :amf => Note.find(params[0]) }
+      format.amf { render :amf => self.current_user.notes.find(params[:id]) }
     end
   end
 
   # saves new or updates existing Note
-  # expect params[0] to be incoming Note
   def save
     respond_to do |format|
       format.amf do
-        @note = params[0]
-
+        @note = params[:note]
+        
         if @note.save
           render :amf => @note
         else
@@ -32,16 +32,15 @@ class NotesController < ApplicationController
   end
 
   # destroy a Note
-  # expects id in params[0]
   def destroy
     respond_to do |format|
       format.amf do
-        @note = Note.find(params[0])
-        @note.destroy
+        @note = self.current_user.notes.find(params[:id])
+        @note.destroy if @note
 
         render :amf => true
       end
     end
   end
-
+  
 end
