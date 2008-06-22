@@ -17,11 +17,17 @@
 	</mx:Script>
 	
 	<mx:constraintColumns>
-		<mx:ConstraintColumn id="leftColumn" x="45" />
+		<mx:ConstraintColumn id="leftColumn" width="100" />
+		<mx:ConstraintColumn id="rightColumn" width="100%" />
 	</mx:constraintColumns>
+	<mx:constraintRows>
+		<mx:ConstraintRow id="headerRow" height="40" />
+		<mx:ConstraintRow id="bodyRow" height="100%" />
+	</mx:constraintRows>
 	
-	<mx:List id="notesList" top="0" bottom="0" right="leftColumn:0" dataProvider="{model.user.notes}" labelField="title" change="selectNote()" />
-	<mx:TextArea id="noteContents" top="0" right="0" bottom="0" left="46" text="{model.selectedNote.content}" />
+	<mx:Label text="FlexNotes" styleName="headerLabel" />
 	
+	<mx:List id="notesList" top="bodyRow:0" bottom="0" left="leftColumn:0" right="rightColumn:0" dataProvider="{model.user.notes}" labelField="title" change="selectNote()" />
+	<mx:TextArea id="noteContents" top="bodyRow:0" right="0" bottom="0" left="rightColumn:5" text="{model.selectedNote.content}" />
 	
 </mx:Canvas>

@@ -3,8 +3,10 @@
 	xmlns:mx="http://www.adobe.com/2006/mxml"
 	xmlns:business="com.flexonrails.pranaSequences.business.*"
 	xmlns:control="com.flexonrails.pranaSequences.control.*"
+	xmlns:view="com.flexonrails.pranaSequences.view.*"
+	backgroundColor="0x000000"
 	layout="absolute"
-xmlns:view="com.flexonrails.pranaSequences.view.*">
+>
 	
 	<mx:Script>
 	<![CDATA[
@@ -16,12 +18,19 @@ xmlns:view="com.flexonrails.pranaSequences.view.*">
 	]]>
 	</mx:Script>
 	
+	<mx:Style>
+		.headerLabel {
+			color: #FFFFFF;
+			fontSize: 18pt;
+		}
+	</mx:Style>
+	
 	<business:Services id="services" />
 	<control:PranaSequencesController id="controller" />
 	
-	<mx:ViewStack id="mainViewStack" width="100%" height="100%" selectedIndex="{model.appState}">
-		<view:LoginPanel id="loginPanel" />
-		<view:MainView id="mainView" />
+	<mx:ViewStack id="mainViewStack" width="100%" height="100%" paddingBottom="2" paddingLeft="2" paddingRight="2" paddingTop="2" selectedIndex="{model.appState}">
+		<view:LoginPanel id="loginPanel" width="100%" height="100%" />
+		<view:MainView id="mainView" width="100%" height="100%" />
 	</mx:ViewStack>
 	
 </mx:Application>
