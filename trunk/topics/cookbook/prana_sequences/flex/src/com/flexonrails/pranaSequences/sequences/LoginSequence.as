@@ -14,7 +14,7 @@ package com.flexonrails.pranaSequences.sequences {
 			super();
 			
 			addSequenceEvent(LoginEvent, [username, password]);
-			addSequenceEvent(LoadUserNotesEvent, [new Property(model, "user")], [new Property(model, "user")]);
+			addSequenceEvent(LoadUserNotesEvent, null, [new Property(model, "user")]);
 			
 		}
 		
