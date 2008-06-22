@@ -19,9 +19,8 @@ package com.flexonrails.pranaSequences.commands {
 		
 		public function execute(event:CairngormEvent):void {
 			var evt:LoadUserNotesEvent = event as LoadUserNotesEvent;
-			var user:User = evt.user;
 			var delegate:NotesDelegate = new NotesDelegate(this);
-			delegate.findAll(user);
+			delegate.findAllForCurrentUser();
 		}
 
 		public function result(data:Object):void {

@@ -19,7 +19,7 @@ package com.flexonrails.pranaSequences.business {
 			service = ServiceLocator.getInstance().getRemoteObject(Services.NOTES_SERVICE);
 		}
 		
-		public function findAll(user:User):void {
+		public function findAllForCurrentUser():void {
 			addResponder(service.find_all())
 		}
 		
