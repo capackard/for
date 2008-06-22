@@ -7,11 +7,8 @@ package com.flexonrails.pranaSequences.events {
 		
 		public static const LoadUserNotes_Event:String = "<LoadUserNotesEvent>";
 		
-		public var user:User;
-		
-		public function LoadUserNotesEvent(user:User) {
+		public function LoadUserNotesEvent() {
 			super(LoadUserNotes_Event);
-			this.user = user;
 		}
 	}
 }

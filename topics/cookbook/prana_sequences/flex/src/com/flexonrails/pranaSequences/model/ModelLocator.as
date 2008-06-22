@@ -7,7 +7,7 @@ package com.flexonrails.pranaSequences.model {
 	import com.flexonrails.pranaSequences.vo.User;
     
     [Bindable]
-	public final class ModelLocator implements IModelLocator {
+	public final class ModelLocator {
 		
 		public static const LOGGED_OUT:int	= 0;
 		public static const LOGGED_IN:int	= 1;
