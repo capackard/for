@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:business="com.flexonrails.outliner.business.*"
+	xmlns:control="com.flexonrails.outliner.control.*"
+	xmlns:view="com.flexonrails.outliner.view.*"
+	backgroundColor="0x000000"
+	layout="absolute"
+	applicationComplete="init()"
+>
+	
+	<mx:Script>
+	<![CDATA[
+		import com.flexonrails.outliner.events.RemovePointEvent;
+		import com.flexonrails.outliner.vo.OutlinePoint;
+		import com.flexonrails.outliner.events.AddPointEvent;
+		import mx.controls.Alert;
+		import mx.events.ItemClickEvent;
+		import com.flexonrails.outliner.events.LoadOutlinePointsEvent;
+		import com.flexonrails.outliner.model.ModelLocator;
+		
+		private const ADD:String	= '+';
+		private const REMOVE:String	= '-';
+		
+		[Bindable]
+		private var model:ModelLocator = ModelLocator.getInstance();
+		
+		private function init():void {
+			new LoadOutlinePointsEvent().dispatch();
+		}
+		
+		private function buttonBarClick(event:ItemClickEvent):void {
+			if (event.label == ADD) {
+				var parentPoint:OutlinePoint = outlineTree.selectedItem as OutlinePoint;
+				new AddPointEvent(parentPoint, outlineTree).dispatch();
+			} else if (event.label == REMOVE) {
+				new RemovePointEvent(outlineTree.selectedItem as OutlinePoint, outlineTree).dispatch();
+			}
+		}
+		
+		
+	]]>
+	</mx:Script>
+	
+	<mx:Style>
+		.headerLabel {
+			color: #FFFFFF;
+			fontSize: 18pt;
+		}
+	</mx:Style>
+	
+	<business:Services id="services" />
+	<control:OutlinerController id="controller" />
+	
+	<mx:Tree id="outlineTree"
+		width="300"
+		height="500"
+		verticalCenter="0"
+		horizontalCenter="0"
+		dataProvider="{model.rootOutlinePoint}" 
+		editable="true"
+		dragEnabled="true"
+		dropEnabled="true"
+		dragMoveEnabled="true"
+	/>
+	<mx:ButtonBar id="addRemoveButtonBar" itemClick="buttonBarClick(event)" horizontalCenter="0" top="{outlineTree.y - 30}" enabled="{outlineTree.selectedItem != null}">
+		<mx:String>{ADD}</mx:String>
+		<mx:String>{REMOVE}</mx:String>
+	</mx:ButtonBar>
+</mx:Application>
