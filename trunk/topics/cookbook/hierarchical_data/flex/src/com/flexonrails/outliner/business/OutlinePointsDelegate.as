@@ -21,23 +21,7 @@ package com.flexonrails.outliner.business {
 		public function findRootOutlinePoint():void {
 			addResponder(service.find_root())
 		}
-		
-		public function findById(pointId:Number):void {
-			
-		}
-		
-		public function save(point:OutlinePoint, parent:OutlinePoint=null):void {
-			var args:Object = {outline_point:point}
-			if (parent) {
-				args["parentId"] = parent.id;
-			}
-			addResponder(service.save(args));
-		}
-		
-		public function destroy(point:OutlinePoint):void {
-			addResponder(service.destroy({id:point.id}));
-		}
-		
+
 		private function addResponder(serviceCall:*):void {
 			var token:AsyncToken = serviceCall;
 			token.addResponder(responder);

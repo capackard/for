@@ -11,16 +11,11 @@
 	
 	<mx:Script>
 	<![CDATA[
-		import com.flexonrails.outliner.events.RemovePointEvent;
+		import com.flexonrails.outliner.model.OutlinePointTreeDataDescriptor;
 		import com.flexonrails.outliner.vo.OutlinePoint;
-		import com.flexonrails.outliner.events.AddPointEvent;
 		import mx.controls.Alert;
-		import mx.events.ItemClickEvent;
 		import com.flexonrails.outliner.events.LoadOutlinePointsEvent;
 		import com.flexonrails.outliner.model.ModelLocator;
-		
-		private const ADD:String	= '+';
-		private const REMOVE:String	= '-';
 		
 		[Bindable]
 		private var model:ModelLocator = ModelLocator.getInstance();
@@ -28,16 +23,6 @@
 		private function init():void {
 			new LoadOutlinePointsEvent().dispatch();
 		}
-		
-		private function buttonBarClick(event:ItemClickEvent):void {
-			if (event.label == ADD) {
-				var parentPoint:OutlinePoint = outlineTree.selectedItem as OutlinePoint;
-				new AddPointEvent(parentPoint, outlineTree).dispatch();
-			} else if (event.label == REMOVE) {
-				new RemovePointEvent(outlineTree.selectedItem as OutlinePoint, outlineTree).dispatch();
-			}
-		}
-		
 		
 	]]>
 	</mx:Script>
@@ -57,14 +42,11 @@
 		height="500"
 		verticalCenter="0"
 		horizontalCenter="0"
-		dataProvider="{model.rootOutlinePoint}" 
+		dataProvider="{model.outlinePoints}"
+		dataDescriptor="{new OutlinePointTreeDataDescriptor()}"
 		editable="true"
 		dragEnabled="true"
 		dropEnabled="true"
 		dragMoveEnabled="true"
 	/>
-	<mx:ButtonBar id="addRemoveButtonBar" itemClick="buttonBarClick(event)" horizontalCenter="0" top="{outlineTree.y - 30}" enabled="{outlineTree.selectedItem != null}">
-		<mx:String>{ADD}</mx:String>
-		<mx:String>{REMOVE}</mx:String>
-	</mx:ButtonBar>
 </mx:Application>

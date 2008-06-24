@@ -7,6 +7,7 @@ package com.flexonrails.outliner.commands {
 	import com.flexonrails.outliner.model.ModelLocator;
 	import com.flexonrails.outliner.vo.OutlinePoint;
 	
+	import mx.collections.ArrayCollection;
 	import mx.controls.Alert;
 	import mx.rpc.IResponder;
 	import mx.rpc.events.FaultEvent;
@@ -25,7 +26,7 @@ package com.flexonrails.outliner.commands {
 		public function result(data:Object):void {
 			var result:ResultEvent = data as ResultEvent;
 			var rootPoint:OutlinePoint = result.result as OutlinePoint;
-			model.rootOutlinePoint = rootPoint;
+			model.outlinePoints = new ArrayCollection([rootPoint]);
 		}
 		
 		public function fault(info:Object):void {

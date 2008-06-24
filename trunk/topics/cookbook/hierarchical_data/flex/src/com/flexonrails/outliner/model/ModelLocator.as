@@ -2,12 +2,13 @@ package com.flexonrails.outliner.model {
 	
 	import com.adobe.cairngorm.CairngormError;
 	import com.adobe.cairngorm.CairngormMessageCodes;
-	import com.flexonrails.outliner.vo.OutlinePoint;
+	
+	import mx.collections.ArrayCollection;
     
     [Bindable]
 	public final class ModelLocator {
 		
-		public var rootOutlinePoint:OutlinePoint;
+		public var outlinePoints:ArrayCollection;
 		
 		private static var instance:ModelLocator;
 		
