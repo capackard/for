@@ -12,9 +12,6 @@ package com.flexonrails.outliner.control {
 		
 		private function initialize():void {
 			// add commands
-			addCommand(MovePointEvent.MovePoint_Event, MovePointCommand);
-			addCommand(RemovePointEvent.RemovePoint_Event, RemovePointCommand);
-			addCommand(AddPointEvent.AddPoint_Event, AddPointCommand);
 			addCommand(LoadOutlinePointsEvent.LoadOutlinePoints_Event,	LoadOutlinePointsCommand)
 		}
 	}
