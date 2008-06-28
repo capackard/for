@@ -7,14 +7,12 @@ package com.flexonrails.outliner.vo {
 	public class OutlinePoint {
 		
 		public var id:Number;
-		public var label:String = "New Outline Point";
+		public var label:String;
 		public var parent:OutlinePoint;
 		public var createdAt:Date;
 		public var updatedAt:Date;
 		
 		public var children:ArrayCollection;
 		
-		public var errors:Array;
-
 	}
 }

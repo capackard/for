@@ -44,9 +44,5 @@
 		horizontalCenter="0"
 		dataProvider="{model.outlinePoints}"
 		dataDescriptor="{new OutlinePointTreeDataDescriptor()}"
-		editable="true"
-		dragEnabled="true"
-		dropEnabled="true"
-		dragMoveEnabled="true"
 	/>
 </mx:Application>

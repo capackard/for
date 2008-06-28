@@ -2,7 +2,7 @@ class OutlinePointsController < ApplicationController
   
   def find_root
     respond_to do |format|
-      format.amf  { render :amf => OutlinePoint.find_by_parent_id(nil) }
+      format.amf  { render :amf => OutlinePoint.roots.first }
     end
   end
   
