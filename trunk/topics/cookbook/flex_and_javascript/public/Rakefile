@@ -1,0 +1,9 @@
+require 'rake/clean'
+
+CLEAN.include '*.swf'
+
+task :default => :main
+
+file "main" do
+  sh %{ mxmlc -locale=en_US index.mxml }
+end
