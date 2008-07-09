@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="horizontal">
+	
+	<mx:Script>
+	<![CDATA[
+		
+		public function methodOne():void {
+			
+		}
+		
+		public function longRunningMethod():void {
+			var a:int
+			for (var i:int = 0; i < 10000000; i++) {
+				a++;
+			}
+		}
+		
+	]]>
+	</mx:Script>
+	
+	<mx:Button id="methodOneButton" click="methodOne()" />
+	<mx:Button id="longRunningMethodButton" click="longRunningMethod()" />
+	
+</mx:Application>
