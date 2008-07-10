@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="vertical" backgroundColor="0xFFFFFF" horizontalAlign="center" xmlns:fibonacci="fibonacci.*">
+	<mx:Script>
+	<![CDATA[
+		
+		private function createSequence(n:Number):void {
+			var currentSequence:Array = [0,1];
+			var position:int = 1;
+			var subOne:Number;
+			var subTwo:Number;
+			while (position < n) {
+				subOne = currentSequence[position];
+				subTwo = currentSequence[position - 1];
+				currentSequence.push(subOne + subTwo);
+				position++
+			}
+			
+			visualizer.showForSequence(currentSequence);
+		}
+		
+	]]>
+	</mx:Script>
+	
+	<mx:Label id="sequenceLabel" text="What position of the Fibonacci sequence should we show?" />
+	<mx:TextInput id="sequenceLimit" width="50" enter="createSequence(Number(sequenceLimit.text))" />
+	
+	<fibonacci:FibonacciVisualizer id="visualizer" />
+	
+</mx:Application>
