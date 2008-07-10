@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml">
+	
+	<mx:Script>
+	<![CDATA[
+		import mx.core.Container;
+		
+		public function showForSequence(sequence:Array):void {
+			var highestFirst:Array = sequence.reverse();
+			var i:String;
+			var index:int;
+			var num:Number;
+			var parentContainer:Container = this;
+			var c:Canvas;
+			var sizeMultiplier:int;
+			for (i in highestFirst) {
+				index = int(i);
+				if (index != highestFirst.length) {
+					num = highestFirst[index];
+					c = new Canvas();
+					c.setStyle("backgroundColor", 0x000000);
+					c.setStyle("borderStyle", "solid");
+					c.setStyle("borderColor", 0xFFFFFF);
+					if (index == 1) {
+						c.percentHeight = c.percentWidth = 100;
+					} else {
+						c.width = c.height = num
+					}
+					parentContainer.addChild(c);
+					parentContainer = c;
+				}
+			}
+		}
+		
+		
+		
+	]]>
+	</mx:Script>
+	
+</mx:Canvas>
