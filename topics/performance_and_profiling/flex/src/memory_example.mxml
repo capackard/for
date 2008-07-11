@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="vertical" backgroundColor="0xFFFFFF" horizontalAlign="center" xmlns:fibonacci="fibonacci.*">
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="vertical" backgroundColor="0x000000" horizontalAlign="center" xmlns:fibonacci="fibonacci.*">
+
+	<mx:Style>
+		
+		FibonacciSquare {
+			border-style: solid;
+			border-color: #FFFFFF;
+			bottom: 0;
+			right: 0;
+		}
+		
+		.whiteLabel {
+			color: #FFFFFF;
+		}
+		
+	</mx:Style>
+	
 	<mx:Script>
 	<![CDATA[
 		
@@ -21,7 +37,7 @@
 	]]>
 	</mx:Script>
 	
-	<mx:Label id="sequenceLabel" text="What position of the Fibonacci sequence should we show?" />
+	<mx:Label id="sequenceLabel" text="How many Fibonacci Squares? (between 8-15 reccomended)" styleName="whiteLabel" />
 	<mx:TextInput id="sequenceLimit" width="50" enter="createSequence(Number(sequenceLimit.text))" />
 	
 	<fibonacci:FibonacciVisualizer id="visualizer" />

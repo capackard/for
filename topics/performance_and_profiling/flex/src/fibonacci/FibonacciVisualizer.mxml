@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml">
-	
+
 	<mx:Script>
 	<![CDATA[
 		import mx.core.Container;
@@ -10,29 +10,23 @@
 			var i:String;
 			var index:int;
 			var num:Number;
+			var s:FibonacciSquare;
 			var parentContainer:Container = this;
-			var c:Canvas;
-			var sizeMultiplier:int;
+			
+			// to fix the leak, uncomment below
+			// removeAllChildren();
+			
 			for (i in highestFirst) {
 				index = int(i);
 				if (index != highestFirst.length) {
 					num = highestFirst[index];
-					c = new Canvas();
-					c.setStyle("backgroundColor", 0x000000);
-					c.setStyle("borderStyle", "solid");
-					c.setStyle("borderColor", 0xFFFFFF);
-					if (index == 1) {
-						c.percentHeight = c.percentWidth = 100;
-					} else {
-						c.width = c.height = num
-					}
-					parentContainer.addChild(c);
-					parentContainer = c;
+					s = new FibonacciSquare();
+					s.width = s.height = num
+					parentContainer.addChild(s);
+					parentContainer = s;
 				}
 			}
 		}
-		
-		
 		
 	]]>
 	</mx:Script>
