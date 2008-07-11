@@ -14,7 +14,7 @@
 			var parentContainer:Container = this;
 			
 			// to fix the leak, uncomment below
-			// removeAllChildren();
+			//removeAllChildren();
 			
 			for (i in highestFirst) {
 				index = int(i);
