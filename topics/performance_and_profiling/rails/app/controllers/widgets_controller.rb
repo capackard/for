@@ -2,7 +2,7 @@ class WidgetsController < ApplicationController
   # GET /widgets
   # GET /widgets.xml
   def index
-    @widgets = Widget.find(:all)
+    WidgetsController.benchmark("finding all widgets >>>>>>>>") { @widgets = Widget.find(:all) }
 
     respond_to do |format|
       format.html # index.html.erb
