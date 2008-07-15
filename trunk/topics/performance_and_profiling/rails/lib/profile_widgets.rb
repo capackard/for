@@ -1,1 +1,1 @@
-get '/widgets'
+get '/widgets.xml'
